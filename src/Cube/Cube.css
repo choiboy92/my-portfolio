@@ -2,7 +2,6 @@
 
 body {
 font-family: sans-serif;
-margin: 10rem;
 }
 
 .scene {
@@ -39,6 +38,15 @@ margin: 10rem;
   font-weight: bold;
   color: white;
   text-align: center;
+}
+
+.cubeFaceItem {
+   opacity: 0.5;
+   width: 300px;
+   height: 300px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
 }
 
 .cube__face--front  { background: hsla(  0, 100%, 50%, 0.7); }
