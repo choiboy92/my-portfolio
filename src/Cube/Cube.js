@@ -1,6 +1,7 @@
 import * as React from 'react';
 import './Cube.css'
 import Cube from 'react-3d-cube';
+import {Link} from 'react-router-dom';
 
 class LogoCube extends React.Component {
   render() {
@@ -11,7 +12,7 @@ class LogoCube extends React.Component {
                   <h1 style={{}}>Drag and rotate me</h1>
                 </div>
                 <div className="cubeFaceItem" style={{backgroundColor: 'green'}}>
-                  <h1 style={{}}>right</h1>
+                  <Link to="/about"><h1 style={{}}>About</h1></Link>
                 </div>
                 <div className="cubeFaceItem" style={{backgroundColor: 'blue'}}>
                   <h1 style={{}}>back</h1>

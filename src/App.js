@@ -1,16 +1,23 @@
 import './App.css';
-import LogoCube from './Cube/Cube.js'
+import { BrowserRouter,Routes, Route, Link } from 'react-router-dom';
+import HomePage from './HomePage.js';
+import AboutPage from './About.js';
 
 function App() {
   return (
+    <BrowserRouter>
     <div className="App">
-      <header><h1 id="title">Junho Choi</h1>
+
+      <header><Link to="/"><h1 id="title">Junho Choi</h1></Link>
         
       </header>
-      <div className="HomePage">
-        <LogoCube></LogoCube>
-      </div>
+      <Routes>
+        <Route exact path="/" element={<HomePage/>} />
+        <Route path="/about" element={<AboutPage/>} />
+      </Routes>
     </div>
+    </BrowserRouter>
+
   );
 }
 
