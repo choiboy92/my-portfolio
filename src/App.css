@@ -67,6 +67,9 @@ footer {
   flex: 1 0;
   color: grey;
 }
+.footerIcons:hover {
+  color: white;
+}
 
 .projLink {
   text-decoration: none;
@@ -123,9 +126,11 @@ p {
   justify-content:center;
   align-items: center;
   flex-direction: column;
+
 }
 #aboutLH {
   flex: 1 0 300px;
+  border-left: 1px solid grey;
 }
 #aboutRH {
   flex: 0 0 250px;

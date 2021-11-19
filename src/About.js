@@ -12,9 +12,9 @@ function AboutPage() {
         </div>
         <div className = "aboutContainer" id="aboutRH">
           <div style={{display:"flex"}}>
-            <img src={profile} style={{borderRadius: "50%", width: "200px"}} alt="Profile pic"/>
+            <img src={profile} style={{borderRadius: "50%", width: "200px", marginBottom:"20px"}} alt="Profile pic"/>
           </div>
-          <div>
+          <div style={{borderLeft: "1px solid grey"}}>
             <p className="aboutp">Imperial College London
             <ul>
               <li>First Class Honours (2019 & 2020 examinations)</li>

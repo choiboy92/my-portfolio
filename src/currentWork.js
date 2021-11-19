@@ -1,9 +1,51 @@
-import React from "react"
+//import React from "react"
+import React, { useRef, useEffect } from 'react';
+
+const Canvas = props => {
+
+  const canvasRef = useRef(null)
+
+  const draw = (ctx, frameCount) => {
+    ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height)
+    ctx.fillStyle = '#000000'
+    ctx.beginPath()
+    ctx.arc(200, 100, 50*Math.sin(frameCount*0.01)**2, 0, 2*Math.PI)
+    ctx.fill()
+  }
+
+  useEffect(() => {
+
+    const canvas = canvasRef.current
+    const context = canvas.getContext('2d')
+    let frameCount = 0
+    let animationFrameId
+    canvas.style.width ='100%';
+    canvas.style.height='100%';
+    canvas.width  = canvas.offsetWidth;
+    canvas.height = canvas.offsetHeight;
+
+    //Our draw came here
+    const render = () => {
+      frameCount++
+      draw(context, frameCount)
+      animationFrameId = window.requestAnimationFrame(render)
+    }
+    render()
+
+    return () => {
+      window.cancelAnimationFrame(animationFrameId)
+    }
+  }, [draw])
+
+  return <canvas ref={canvasRef} {...props}/>
+}
+
+
 
 function CurrentWorkPage() {
   return (
-    <div>
-      <h1>Current Work!</h1>
+    <div style={{display:"flex", flex:"1 0"}}>
+      <Canvas/>
     </div>
   )
 }
