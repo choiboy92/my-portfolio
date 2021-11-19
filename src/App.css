@@ -42,8 +42,16 @@ footer {
   justify-content: center;
   color: white;
 }
+
+.projLink {
+  text-decoration: none;
+  color: black;
+}
+
 h1 {
+  font-family: 'Shippori Antique', sans-serif;
   color: inherit;
+  font-weight: 500;
 }
 h1:hover {
   text-decoration-line: underline;
@@ -51,6 +59,15 @@ h1:hover {
   text-underline-position: below;
   text-decoration-style: solid;
   color: #96c8a2;
+}
+
+p {
+  font-family: 'Jost', sans-serif;
+  font-weight: 200;
+  margin-left: 20%;
+  margin-right: 20%;
+  font-size: 20px;
+  text-align: justify;
 }
 
 .HomePage {

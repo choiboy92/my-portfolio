@@ -9,22 +9,22 @@ class LogoCube extends React.Component {
             <div style={{width: 400, height: 400}}>
             <Cube size={400} index="front">
                 <div className="cubeFaceItem" style={{backgroundColor: 'orange',}}>
-                  <Link to="/appleintern" className="title"><h1 style={{}}>Apple</h1></Link>
+                  <Link to="/appleintern" className="projLink"><h1>Apple</h1></Link>
                 </div>
                 <div className="cubeFaceItem" style={{backgroundColor: 'green'}}>
-                  <h1 style={{}}>Engineering Design</h1>
+                  <Link to="/engdes" className="projLink"><h1 style={{}}>Engineering Design</h1></Link>
                 </div>
                 <div className="cubeFaceItem" style={{backgroundColor: 'blue'}}>
-                  <h1 style={{}}>Neutoy</h1>
+                  <Link to="/neutoy" className="projLink"><h1 style={{}}>Neutoy</h1></Link>
                 </div>
                 <div className="cubeFaceItem" style={{backgroundColor: 'red'}}>
-                  <h1 style={{}}>Accessible kitchens</h1>
+                  <Link to="/kitchen" className="projLink"><h1 style={{}}>Accessible kitchens</h1></Link>
                 </div>
                 <div className="cubeFaceItem" style={{backgroundColor: 'purple'}}>
-                  <h1 style={{}}>Present Weather Neural Network</h1>
+                  <Link to="/presweather" className="projLink"><h1 style={{}}>Present Weather Neural Network</h1></Link>
                 </div>
                 <div className="cubeFaceItem" style={{backgroundColor: 'yellow'}}>
-                  <h1 style={{}}>JsviewHKL</h1>
+                  <Link to="/jsviewhkl" className="projLink"><h1 style={{}}>JsviewHKL</h1></Link>
                 </div>
             </Cube>
             </div>
