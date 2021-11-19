@@ -17,9 +17,9 @@ function App() {
     <div className="App">
 
       <header>
-        <Link to="/" className="title" id="myLogo"><h1>Junho Choi</h1></Link>
-        <Link to="/currentwork" className="title"><h1 >Current work</h1></Link>
-        <Link to="/about" className="title"><h1>About me</h1></Link>
+        <Link to="/" className="headLink" id="myLogo"><h1>Junho Choi</h1></Link>
+        <Link to="/currentwork" className="headLink"><h1 >Current work</h1></Link>
+        <Link to="/about" className="headLink"><h1>About me</h1></Link>
       </header>
       <Routes>
         <Route exact path="/" element={<HomePage/>} />
