@@ -3,6 +3,7 @@ import { BrowserRouter,Routes, Route, Link } from 'react-router-dom';
 import HomePage from './HomePage.js';
 import AboutPage from './About.js';
 import CurrentWorkPage from './currentWork.js';
+import Apple from './Projects/Apple.js';
 
 function App() {
   return (
@@ -18,7 +19,12 @@ function App() {
         <Route exact path="/" element={<HomePage/>} />
         <Route path="/currentwork" element={<CurrentWorkPage/>} />
         <Route path="/about" element={<AboutPage/>} />
+        <Route path="/appleintern" element={<Apple/>} />
+
       </Routes>
+      <footer>
+        <p>Email me!</p>
+      </footer>
     </div>
     </BrowserRouter>
 

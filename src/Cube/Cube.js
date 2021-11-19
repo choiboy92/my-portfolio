@@ -9,7 +9,7 @@ class LogoCube extends React.Component {
             <div style={{width: 400, height: 400}}>
             <Cube size={400} index="front">
                 <div className="cubeFaceItem" style={{backgroundColor: 'orange',}}>
-                  <h1 style={{}}>Apple</h1>
+                  <Link to="/appleintern" className="title"><h1 style={{}}>Apple</h1></Link>
                 </div>
                 <div className="cubeFaceItem" style={{backgroundColor: 'green'}}>
                   <h1 style={{}}>Engineering Design</h1>
