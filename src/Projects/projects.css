@@ -1,6 +1,10 @@
 .ProjectPage {
   display: flex;
   flex-direction: column;
-  margin-left: 10%;
-  margin-right: 10%;
+  background-color: black;
+}
+
+.landingWrapper {
+  display: flex;
+  height: 100vh;
 }

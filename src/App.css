@@ -39,9 +39,19 @@ header {
   color: white;
   flex:0 0 300px;
 }
+
+.headLink:hover {
+  text-decoration-line: underline;
+  text-decoration-color: white;
+  text-underline-position: below;
+  text-decoration-style: solid;
+  color: #96c8a2;
+}
+
 #myLogo {
   font-size: 18px;
   flex:1 0 500px;
+  font-weight: 900;
 }
 
 footer {
@@ -55,7 +65,7 @@ footer {
 }
 .footerIcons {
   flex: 1 0;
-  color: white;
+  color: grey;
 }
 
 .projLink {
@@ -68,21 +78,23 @@ h1 {
   color: inherit;
   font-weight: 500;
 }
-.headLink:hover {
-  text-decoration-line: underline;
-  text-decoration-color: white;
-  text-underline-position: below;
-  text-decoration-style: solid;
-  color: #96c8a2;
-}
 
 p {
   font-family: 'Jost', sans-serif;
   font-weight: 200;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 20%;
+  margin-right: 20%;
   font-size: 20px;
   text-align: justify;
+  color: white;
+}
+
+.aboutp {
+  font-weight: 400;
+  text-align:left;
+  margin-left: 10%;
+  margin-right: 10%;
+  color:black;
 }
 
 .HomePage {

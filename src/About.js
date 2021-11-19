@@ -6,7 +6,7 @@ function AboutPage() {
 
         <div className = "aboutContainer" id="aboutLH">
           <h1><span style={{padding: "0 15px", boxShadow:"inset 0 -15px 0 0 #96c8a2"}}>Hello World!</span></h1>
-          <p>My name is Junho Choi and I am a 4th year Mechanical Engineering Undergraduate at Imperial College London. Alongside my studies, I have been working as a Product Manage at DoubleMe since July 2020.<br/><br/>
+          <p className="aboutp">My name is Junho Choi and I am a 4th year Mechanical Engineering Undergraduate at Imperial College London. Alongside my studies, I have been working as a Product Manage at DoubleMe since July 2020.<br/><br/>
               Along with engineering, I have a keen interest in design, machine learning, front- end web development and computer vision. These wide-ranging interests have lead me to take part in a variety of projects as part of my coursework, internships, and even individual projects that I have started in my free time.
           </p>
         </div>
@@ -15,7 +15,7 @@ function AboutPage() {
             <img src={profile} style={{borderRadius: "50%", width: "200px"}} alt="Profile pic"/>
           </div>
           <div>
-            <p style={{fontWeight: "400",textAlign:"left"}}>Imperial College London
+            <p className="aboutp">Imperial College London
             <ul>
               <li>First Class Honours (2019 & 2020 examinations)</li>
               <li>Dean’s List award (2020)</li>
