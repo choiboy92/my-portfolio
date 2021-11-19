@@ -26,20 +26,35 @@ header {
   width: 100%;
   background-color: black;
   top:0;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.headLink {
+  font-size: 12px;
+  display: flex;
+  flex-grow: 1;
+  text-decoration: none;
+  justify-content: center;
+  color: white;
+  flex:0 0 300px;
+}
+#myLogo {
+  font-size: 18px;
+  flex:1 0 500px;
 }
 
 footer {
   display: flex;
   width: 100%;
-  background-color: blue;
+  background-color: black;
   margin-top: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top: 1px solid grey;
 }
-
-.headLink {
-  display: flex;
-  flex-grow: 1;
-  text-decoration: none;
-  justify-content: center;
+.footerIcons {
+  flex: 1 0;
   color: white;
 }
 
@@ -105,9 +120,7 @@ p {
   margin-top:10px;
 }
 
-#myLogo {
-  flex-grow: 3;
-}
+
 ul {
   color: grey;
   font-weight: 300;

@@ -10,6 +10,10 @@ import Kitchen from './Projects/Kitchen.js';
 import Neutoy from './Projects/Neutoy.js';
 import Jsviewhkl from './Projects/Jsviewhkl.js';
 
+import {GoMarkGithub} from "react-icons/go";
+import {MdEmail} from "react-icons/md";
+import {AiFillInstagram} from "react-icons/ai";
+import {FaLinkedin} from "react-icons/fa";
 
 function App() {
   return (
@@ -17,7 +21,7 @@ function App() {
     <div className="App">
 
       <header>
-        <Link to="/" className="headLink" id="myLogo"><h1>Junho Choi</h1></Link>
+        <Link to="/" className="headLink" id="myLogo"><h1 style={{margin:0}}>Junho Choi</h1></Link>
         <Link to="/currentwork" className="headLink"><h1 >Current work</h1></Link>
         <Link to="/about" className="headLink"><h1>About me</h1></Link>
       </header>
@@ -34,7 +38,10 @@ function App() {
 
       </Routes>
       <footer>
-        <p>Email me!</p>
+        <a href='mailto:junho.choi.imp@gmail.com' className="footerIcons" target="_blank" rel="noopener noreferrer"><MdEmail style={{height:"30px", width:"30px"}}/></a>
+        <a href='https://github.com/choiboy92' className="footerIcons" target="_blank" rel="noopener noreferrer"><GoMarkGithub style={{height:"30px", width:"30px"}}/></a>
+        <a href='https://www.linkedin.com/in/junho-c-b2461bb2/' className="footerIcons" target="_blank" rel="noopener noreferrer"><FaLinkedin style={{height:"30px", width:"30px"}}/></a>
+        <a href='https://www.instagram.com/junho.what/' className="footerIcons" target="_blank" rel="noopener noreferrer"><AiFillInstagram style={{height:"30px", width:"30px"}}/></a>
       </footer>
     </div>
     </BrowserRouter>
