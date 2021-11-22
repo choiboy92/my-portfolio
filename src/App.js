@@ -21,7 +21,7 @@ function App() {
     <div className="App">
 
       <header>
-        <Link to="/" className="headLink" id="myLogo"><h1 style={{margin:0}}>Junho Choi</h1></Link>
+        <Link to="/" className="headLink" id="myLogo"><h1 style={{margin:0}}>junho choi</h1></Link>
         <Link to="/currentwork" className="headLink"><h1 style={{fontWeight: "300"}}>current work</h1></Link>
         <Link to="/about" className="headLink"><h1 style={{fontWeight: "300"}}>about me</h1></Link>
       </header>

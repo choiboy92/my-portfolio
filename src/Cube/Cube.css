@@ -47,6 +47,14 @@ font-family: sans-serif;
    display: flex;
    align-items: center;
    justify-content: center;
+   border: 1px solid white;
+}
+
+.cubeFaceText {
+  color: white;
+  font-family: 'Jost', sans-serif;
+  font-weight: 200;
+  font-size: 30px;
 }
 
 .cube__face--front  { background: hsla(  0, 100%, 50%, 0.7); }

@@ -66,6 +66,8 @@ footer {
 .footerIcons {
   flex: 1 0;
   color: grey;
+  border-left: 1px solid grey;
+  border-right: 1px solid grey;
 }
 .footerIcons:hover {
   color: white;

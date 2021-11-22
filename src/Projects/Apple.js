@@ -15,7 +15,17 @@ function Apple(props) {
       date="2021"
       desc = {description}
       role = {role}
+      id = "apple"
     />
+    <div className="introDescWrapper">
+      <div>
+        <p>DESCRIPTION:
+         {description}</p>
+      </div>
+      <div>
+        <p>ROLE: {role}</p>
+      </div>
+    </div>
     <Divider color="white"/>
       <p>
 				This is the description of my time at Apple.

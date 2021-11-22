@@ -6,28 +6,28 @@ import {Link} from 'react-router-dom';
 class LogoCube extends React.Component {
   render() {
     return (
-            <div style={{width: 400, height: 400}}>
-            <Cube size={400} index="front">
-                <div className="cubeFaceItem" style={{backgroundColor: 'orange',}}>
-                  <Link to="/appleintern" className="projLink"><h1>Apple</h1></Link>
-                </div>
-                <div className="cubeFaceItem" style={{backgroundColor: 'green'}}>
-                  <Link to="/engdes" className="projLink"><h1 style={{}}>Engineering Design</h1></Link>
-                </div>
-                <div className="cubeFaceItem" style={{backgroundColor: 'blue'}}>
-                  <Link to="/neutoy" className="projLink"><h1 style={{}}>Neutoy</h1></Link>
-                </div>
-                <div className="cubeFaceItem" style={{backgroundColor: 'red'}}>
-                  <Link to="/kitchen" className="projLink"><h1 style={{}}>Accessible kitchens</h1></Link>
-                </div>
-                <div className="cubeFaceItem" style={{backgroundColor: 'purple'}}>
-                  <Link to="/presweather" className="projLink"><h1 style={{}}>Present Weather Neural Network</h1></Link>
-                </div>
-                <div className="cubeFaceItem" style={{backgroundColor: 'yellow'}}>
-                  <Link to="/jsviewhkl" className="projLink"><h1 style={{}}>JsviewHKL</h1></Link>
-                </div>
-            </Cube>
-            </div>
+      <div style={{width: 400, height: 400}}>
+      <Cube size={400} index="front">
+          <div className="cubeFaceItem" style={{backgroundColor: 'black'}}>
+            <Link to="/appleintern" className="projLink"><h1 className="cubeFaceText">APPLE</h1></Link>
+          </div>
+          <div className="cubeFaceItem" style={{backgroundColor: 'black'}}>
+            <Link to="/engdes" className="projLink"><h1 className="cubeFaceText">ENGINEERING DESIGN</h1></Link>
+          </div>
+          <div className="cubeFaceItem" style={{backgroundColor: 'black'}}>
+            <Link to="/neutoy" className="projLink"><h1 className="cubeFaceText">NEUTOY</h1></Link>
+          </div>
+          <div className="cubeFaceItem" style={{backgroundColor: 'black'}}>
+            <Link to="/kitchen" className="projLink"><h1 className="cubeFaceText">ACCESSIBLE KITCHENS</h1></Link>
+          </div>
+          <div className="cubeFaceItem" style={{backgroundColor: 'black'}}>
+            <Link to="/presweather" className="projLink"><h1 className="cubeFaceText">PRESENT WEATHER NEURAL NETWORK</h1></Link>
+          </div>
+          <div className="cubeFaceItem" style={{backgroundColor: 'black'}}>
+            <Link to="/jsviewhkl" className="projLink"><h1 className="cubeFaceText">RUTHERFORD APPLETON LABORATORY</h1></Link>
+          </div>
+      </Cube>
+      </div>
     );
   }
 }
