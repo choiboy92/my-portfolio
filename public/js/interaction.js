@@ -1,51 +1,69 @@
 let leon, canvas, ctx;
 
-const sw = 600;
+const sw = 700;
 const sh = 300;
 const pixelRatio = 2;
 
-function init(loc) {
+function init(loc, txt2Render, date2Render) {
     canvas = document.getElementById(loc);
     ctx = canvas.getContext("2d");
-    txt = "here's some text";
     //canvas.width = sw * pixelRatio;
     //canvas.height = sh * pixelRatio;
     //canvas.style.width = sw + 'px';
     //canvas.style.height = sh + 'px';
     ctx.scale(pixelRatio, pixelRatio);
-    console.log(txt);
-    leon = new LeonSans({
-        text: txt,
+    title = new LeonSans({
+        text: txt2Render,
         color: ['#FFFFFF'],
         size: 80,
         weight: 200
     });
-    let i, total = leon.drawing.length;
-    for (i = 0; i < total; i++) {
-        TweenMax.fromTo(leon.drawing[i], 1.6, {
-            value: 0
-        }, {
-            delay: i * 0.05,
-            value: 1,
-            ease: Power4.easeOut
-        });
-}
+
+    date = new LeonSans({
+        text: date2Render,
+        colorful: ['#c5d73f', '#9d529c', '#49a9db', '#fec330', '#5eb96e', '#fc5356', '#f38f31'],
+        size: 50,
+        weight: 600
+    });
+
+    draw(title, 3.0);
+    draw(date, 3.0);
 
     requestAnimationFrame(animate);
 }
+
+function draw(element, time) {
+  let i, total = element.drawing.length;
+  for (i = 0; i < total; i++) {
+      TweenMax.fromTo(element.drawing[i], time, {
+          value: 0
+      }, {
+          delay: i * 0.1,
+          value: 1,
+          ease: Power4.easeOut
+          /*onComplete: function() {
+            //console.log('done, ', i);
+            count++;
+            console.log('count, ', count);
+          }*/
+      });
+  }
+}
+
 
 function animate(t) {
     requestAnimationFrame(animate);
 
     ctx.clearRect(0, 0, sw, sh);
 
-    const x = (sw - leon.rect.w) / 2;
-    const y = (sh - leon.rect.h) / 2;
-    leon.position(x, y);
-
-    leon.draw(ctx);
+    const x = (sw - title.rect.w) / 2;
+    const y = (sh - title.rect.h) / 2;
+    title.position(x, y);
+    title.draw(ctx);
+    date.position(x+400, y);
+    date.drawColorful(ctx);
 }
 
 window.onload = () => {
-    init("apple");
+    init();
 };

@@ -10,11 +10,12 @@ function EngDes(props) {
   return (
     <div className="ProjectPage">
     <ProjectIntro
-    	name="Engineering Design Projects"
-      background="/ME2_DesignWeek_render2.JPG"
+    	name="Engineering\n   Design Projects"
+      //background="/ME2_DesignWeek_render2.JPG"
       date="2018-21"
-      desc = {description}
-      role = {role}
+      //desc = {description}
+      //role = {role}
+      id="engdes"
     />
     <Divider color="white"/>
       <p>

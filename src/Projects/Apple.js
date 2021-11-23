@@ -10,11 +10,11 @@ function Apple(props) {
   return (
     <div className="ProjectPage">
     <ProjectIntro
-    	name="Apple Internship"
-      background='/appleBG.jpg'
+    	name="Apple\n   Internship"
+      //background='/appleBG.jpg'
       date="2021"
-      desc = {description}
-      role = {role}
+      //desc = {description}
+      //role = {role}
       id = "apple"
     />
     <div className="introDescWrapper">
