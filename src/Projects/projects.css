@@ -6,7 +6,7 @@
 
 .landingWrapper {
   display: flex;
-  height: 80vh;
+  height: 60vh;
   flex-direction: column;
 	justify-content: center;
 }
@@ -16,6 +16,10 @@
   flex-direction: column;
 	justify-content: center;
 }
+.contentHeadWrapper {
+  display: flex;
+  flex-direction: row;
+}
 canvas {
   padding-left: 0;
   padding-right: 0;
@@ -24,4 +28,24 @@ canvas {
   max-height: 100%;
   max-width: 100%;
   /*flex-grow: 1;*/
+}
+
+#sideWrapper {
+  position: absolute;
+  flex-direction: column;
+  width: 50px;
+  margin-left: 0;
+  margin-top: auto;
+}
+p.sideQuickNav{
+  font-size: 15px;
+  writing-mode: vertical-rl;
+  /*text-orientation: sideways;*/
+  transform:scale(-1);
+  text-decoration: none;
+  transition: font-size 0.2s;
+}
+p.sideQuickNav:hover{
+  font-size: 20px;
+  text-decoration: none;
 }

@@ -21,9 +21,9 @@ function App() {
     <div className="App">
 
       <header>
-        <Link to="/" className="headLink" id="myLogo"><h1 style={{margin:0}}>junho choi</h1></Link>
-        <Link to="/currentwork" className="headLink"><h1 style={{fontWeight: "300"}}>current work</h1></Link>
-        <Link to="/about" className="headLink"><h1 style={{fontWeight: "300"}}>about me</h1></Link>
+        <Link to="/" className="headLink" id="myLogo"><h1 style={{margin:0,fontWeight: "900"}}>junho choi</h1></Link>
+        <Link to="/currentwork" className="headLink"><h1 style={{fontWeight: "200"}}>current work</h1></Link>
+        <Link to="/about" className="headLink"><h1 style={{fontWeight: "200"}}>about me</h1></Link>
       </header>
       <Routes>
         <Route exact path="/" element={<HomePage/>} />
@@ -35,9 +35,10 @@ function App() {
         <Route path="/kitchen" element={<Kitchen/>} />
         <Route path="/neutoy" element={<Neutoy/>} />
         <Route path="/jsviewhkl" element={<Jsviewhkl/>} />
-
       </Routes>
+
       <footer>
+      <p id="contactLabel">CONTACT ME</p>
         <a href='mailto:junho.choi.imp@gmail.com' className="footerIcons" target="_blank" rel="noopener noreferrer"><MdEmail style={{height:"30px", width:"30px"}}/></a>
         <a href='https://github.com/choiboy92' className="footerIcons" target="_blank" rel="noopener noreferrer"><GoMarkGithub style={{height:"30px", width:"30px"}}/></a>
         <a href='https://www.linkedin.com/in/junho-c-b2461bb2/' className="footerIcons" target="_blank" rel="noopener noreferrer"><FaLinkedin style={{height:"30px", width:"30px"}}/></a>

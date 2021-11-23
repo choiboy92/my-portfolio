@@ -1,7 +1,8 @@
 import React from "react";
 import ProjectIntro from "./ProjectPage_intro.js";
-import './projects.css'
-import Divider from './divider.js'
+import './projects.css';
+import Divider from './hooks/divider.js';
+import SideQuickNav from './hooks/sideQuickNav.js';
 
 const description = "Hi this is the description for my Apple internship role";
 const role = "IS&T Machine Learning Intern"
@@ -17,7 +18,9 @@ function Apple(props) {
       //role = {role}
       id = "apple"
     />
+
     <div className="introDescWrapper">
+    <SideQuickNav/>
       <div>
         <p>DESCRIPTION:
          {description}</p>
