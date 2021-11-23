@@ -15,7 +15,7 @@ function SideQuickNav(props){
       <Link to="/presweather" className="headLink"><p className="sideQuickNav">PRESENT WEATHER NN</p></Link>
       <p style={{marginTop: "auto", marginLeft: "auto", marginRight: "auto", textAlign: "center", fontWeight:"500"}}>.</p>
       <Link to="/jsviewhkl" className="headLink"><p className="sideQuickNav">JSVIEWHKL</p></Link>
-      </div>
+    </div>
   )
 }
 export default SideQuickNav;

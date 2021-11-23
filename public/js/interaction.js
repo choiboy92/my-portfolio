@@ -15,7 +15,7 @@ function init(loc, txt2Render, date2Render) {
     title = new LeonSans({
         text: txt2Render,
         color: ['#FFFFFF'],
-        size: 80,
+        size: 60,
         weight: 200,
     });
 
@@ -51,7 +51,8 @@ function animate(t) {
 
     ctx.clearRect(0, 0, sw, sh);
 
-    const x = (sw - title.rect.w) / 2;
+    //const x = (sw - title.rect.w) / 2;
+    const x = 70;
     const y = (sh - title.rect.h) / 2;
     title.position(x, y);
     title.draw(ctx);
@@ -59,6 +60,40 @@ function animate(t) {
     date.drawColorful(ctx);
 }
 
-window.onload = () => {
+/* ANIME.JS FUNCTIONS */
+function sideQuickNav_bounce() {
+  anime({
+    targets: '#sideWrapper',
+    translateY: [250,0],
+    duration: 3000
+  })
+}
+
+function aboutPage_anime() {
+  anime({
+    targets: '#aboutLH',
+    translateX:[-250,0],
+    duration: 2000
+  })
+  anime({
+    targets: '#aboutRH',
+    translateX:[250,0],
+    duration: 3000
+  })
+}
+
+function homePage_anime() {
+  anime({
+    targets: '#rotateLabel',
+    rotateY: 360,
+    duration: 8000,
+    loop: true,
+    easing: 'linear',
+  })
+}
+
+
+
+/*window.onload = () => {
     init();
-};
+};*/

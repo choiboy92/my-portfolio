@@ -1,6 +1,10 @@
-import React from "react"
-import profile from './Assets/profile.JPG'
+import React, {useEffect} from "react";
+import profile from './Assets/profile.JPG';
 function AboutPage() {
+  useEffect(() => {
+    window.aboutPage_anime();
+  }, []);
+
   return (
     <div id="aboutPage">
 

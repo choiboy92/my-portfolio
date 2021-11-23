@@ -159,6 +159,6 @@ ul {
 
 .decoLabel {
   display: flex;
-  flex: 1 0 400px;
+  flex: 1 0 200px;
   justify-content: left;
 }

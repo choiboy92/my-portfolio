@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ProjectIntro from "./ProjectPage_intro.js";
 import './projects.css';
 import Divider from './hooks/divider.js';
@@ -8,6 +8,10 @@ const description = "Hi this is the description for my Apple internship role";
 const role = "IS&T Machine Learning Intern"
 
 function Apple(props) {
+  /*useEffect(() => {
+    window.test();
+  }, []);*/
+
   return (
     <div className="ProjectPage">
     <ProjectIntro
