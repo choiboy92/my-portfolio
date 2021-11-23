@@ -21,7 +21,13 @@ function App() {
     <div className="App">
 
       <header>
-        <Link to="/" className="headLink" id="myLogo"><h1 style={{margin:0,fontWeight: "900"}}>junho choi</h1></Link>
+        <Link to="/" className="headLink" id="myLogo">
+          <h1 style={{margin:0,fontWeight: "900"}}>
+            <span style={{padding: "0 15px", boxShadow:"inset 0 -15px 0 0 #96c8a2"}}>
+              junho choi
+            </span>
+          </h1>
+        </Link>
         <Link to="/currentwork" className="headLink"><h1 style={{fontWeight: "200"}}>current work</h1></Link>
         <Link to="/about" className="headLink"><h1 style={{fontWeight: "200"}}>about me</h1></Link>
       </header>

@@ -117,6 +117,10 @@ p {
   justify-content:center;
   align-items: center;
   flex-grow: 1;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-left: 20%;
+  padding-right:20%;
 }
 #aboutPage {
   display: flex;
@@ -151,4 +155,10 @@ ul {
   font-weight: 300;
   list-style-type: circle;
   font-size: 15px;
+}
+
+.decoLabel {
+  display: flex;
+  flex: 1 0 400px;
+  justify-content: left;
 }
