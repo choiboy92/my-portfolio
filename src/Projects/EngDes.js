@@ -15,6 +15,15 @@ import burnwire from '../Assets/engdes/burnwire.jpg';
 import sepvelsetup from '../Assets/engdes/SepVel_testing_setup.jpg';
 import vibration from '../Assets/engdes/metalpod_vibration.png';
 import shakertable from '../Assets/engdes/shakertable.jpg';
+import torpedo from '../Assets/engdes/ME2_DesignWeek_render2.jpg';
+import torpedo_poster from '../Assets/engdes/torpedo_poster.png';
+import teargearConcept from '../Assets/engdes/teargear_concept.png';
+import teargearRender from '../Assets/engdes/teargear_translucent.png';
+import rollerball from '../Assets/engdes/transferBearing.jpeg';
+import gearcalcs from '../Assets/engdes/gear_calcs.png';
+import weightdist from '../Assets/engdes/teargear_weightdist.png';
+import teargearmade from '../Assets/engdes/teargear_made.png';
+import teargeartest from '../Assets/engdes/teargear_test.png';
 
 const descriptionMetalpod = "Design, make and test a CubeSat deployment system. The system should interface with the rocket and protect the satellite during launch and then be able to quickly and effectively deploy a 3U CubeSat (manufactured by other teams).";
 const descriptionTorpedo = "As a team, design an electric powered underwater scooter, capable of depths of 40m and an underwater velocity of 1.5m/s all within a working week.";
@@ -55,7 +64,7 @@ function EngDes(props) {
         <h1 className="sectionTitle">Literature Review</h1>
         <h1 className="sectionTitle">Concept Sketches</h1>
         <h1 className="sectionTitle">Design Features</h1>
-          <img src={metalpodExploded} style={{width: "100%"}} alt="Exploded Metalpod"/>
+          <img src={metalpodExploded} style={{width: "90%"}} alt="Exploded Metalpod"/>
         <div className="ColWrapper" style={{marginTop:"0"}}>
           <div className="threeColWrapper_items">
             <p>PROTECTION BY DAMPING
@@ -64,29 +73,29 @@ function EngDes(props) {
           </div>
           <div className="threeColWrapper_items">
             <p>SECURE INTERFACE WITH SATELLITE
-            <img src={railings} style={{width: "100%", marginBottom:"10px"}} alt="SDOF model"/>
+            <img src={railings} style={{width: "100%", marginBottom:"10px"}} alt="Railings design"/>
               <br/>Implementing the protective damping would be of little use if the satellite was not secured and fixed within the deployment system. PTFE coated railings
             </p>
           </div>
           <div className="threeColWrapper_items">
             <p>SIMPLE DEPLOYMENT MECHANISM
-            <img src={burnwireSketch} style={{width: "100%", marginBottom:"10px"}} alt="SDOF model"/>
+            <img src={burnwireSketch} style={{width: "100%", marginBottom:"10px"}} alt="Sketch of Burnwire"/>
               <br/>Implementing the protective damping would be of little use if the satellite was not secured and fixed within the deployment system. PTFE coated railings
             </p>
           </div>
         </div>
-        <img src={deploymentgif} style={{width: "60%", marginBottom:"10px"}} alt="SDOF model"/>
+        <img src={deploymentgif} style={{width: "60%", marginBottom:"10px"}} alt="How deployment works"/>
         <h1 className="sectionTitle">Testing & Analysis</h1>
           <div className="ColWrapper">
             <div style={{flex: "1 0 400px"}}>
               <p>BURNWIRE TEST
-              <img src={burnwire} style={{width: "100%", marginBottom:"10px"}} alt="SDOF model"/>
+              <img src={burnwire} style={{width: "100%", marginBottom:"10px"}} alt="Burnwire in test configuration"/>
                 <br/>The burnwire mechanism was also tested to evaluate the real required voltages to achieve a cutting time below 10s.
               </p>
             </div>
             <div style={{flex: "1 0 400px"}}>
               <p>SEPARATION VELOCITY
-              <img src={sepvelsetup} style={{width: "100%", marginBottom:"10px"}} alt="SDOF model"/>
+              <img src={sepvelsetup} style={{width: "100%", marginBottom:"10px"}} alt="SepVel test setup"/>
                 <br/>A simple pulley test was devised as a way to
               </p>
             </div>
@@ -95,12 +104,12 @@ function EngDes(props) {
             <div style={{flex: "1 0 400px"}}>
               <p>VIBRATION TEST<br/>
                 Both sine sweeps and random vibration tests were carried out on a shaker table to assess the deployment system's ability to protect the satellite under launch conditions and evaluate the accuracy of our SDOF model.
-                <br/><img src={vibration} style={{width: "70%", marginBottom:"10px"}} alt="SDOF model"/>
+                <br/><img src={vibration} style={{width: "70%", marginBottom:"10px"}} alt="Vibration profile results"/>
                 <br/>Both sine sweeps and random vibration tests were carried out on a shaker table to assess the deployment system's ability to protect the satellite under launch conditions and evaluate the accuracy of our SDOF model.
               </p>
             </div>
             <div style={{flex: "0 0 400px"}}>
-              <img src={shakertable} style={{width: "100%", marginBottom:"10px"}} alt="SDOF model"/>
+              <img src={shakertable} style={{width: "100%", marginBottom:"10px"}} alt="Vibration test setup"/>
             </div>
           </div>
       </Tab>
@@ -115,9 +124,27 @@ function EngDes(props) {
           </div>
         </div>
         <Divider color="white"/>
-          <p>
-    				This is the description of my time at Engdes.
-          </p>
+        <h1 className="sectionTitle">Design features</h1>
+          <img src={torpedo} style={{width: "100%", marginBottom:"0"}} alt="Torpedo Render"/>
+          <div className="ColWrapper" style={{marginTop:"0"}}>
+            <div className="threeColWrapper_items">
+              <p>USER ORIENTATED DESIGN<br/>
+                Neutral buoyancy for divers and can secure extra weights for deep diving. Dead man's switch also adds an extra layer of safety to the device.
+              </p>
+            </div>
+            <div className="threeColWrapper_items">
+              <p>SIMPLE MANUFACTURING<br/>
+                Injection moulded design using Epoxy SMC and simple waterproofing features makes it simple to make and assemble.
+              </p>
+            </div>
+            <div className="threeColWrapper_items">
+              <p>EFFECTIVE ACTUATION<br/>
+                Motor selection considers both the required propulsion speed of 1.5m/s while also offering up to 2 hours of continued usage.
+              </p>
+            </div>
+          </div>
+        <h1 className="sectionTitle">Technical Poster</h1>
+          <img src={torpedo_poster} style={{width: "60%", marginBottom:"10px"}} alt="Torpedo Technical Poster"/>
       </Tab>
       <Tab eventKey="teargear" title="MINI ELECTRIC DRAG RACER" className="tabs">
         <div className="introDescWrapper">
@@ -130,9 +157,47 @@ function EngDes(props) {
           </div>
         </div>
         <Divider color="white"/>
-          <p>
-    				This is the description of my time at Engdes.
-          </p>
+        <h1 className="sectionTitle">Concept Sketches</h1>
+          <div className="ColWrapper">
+            <div style={{flex: "0 0 400px"}}><img src={teargearConcept} style={{width: "100%", marginBottom:"10px"}} alt="Teargear Concept Sketch"/></div>
+            <div style={{flex: "0 0 400px"}}>
+              <p>
+                Concept ideation was carried out taking into account restrictions in size and part usage. However, we looked to explore our creativity in designing a unique and effective solution.
+              </p>
+            </div>
+          </div>
+        <h1 className="sectionTitle">Design Features</h1>
+          <img src={teargearRender} style={{width: "60%", marginBottom:"10px"}} alt="Teargear render"/>
+          <div className="ColWrapper">
+            <div className="threeColWrapper_items">
+              <p>OUT-OF-THE-BOX THINKING<br/>
+                <img src={rollerball} style={{width: "100%", marginBottom:"10px"}} alt="Transfer Ball bearing diagram"/>
+                <br/>Used a roller ball bearing instead of axle and remaining wheels to reduce mass and improve top speed.
+              </p>
+            </div>
+            <div className="threeColWrapper_items">
+              <p>OPTIMISED ACTUATION<br/>
+                <img src={gearcalcs} style={{width: "100%", marginBottom:"10px"}} alt="Fixed Transmission gear ratio calculations"/>
+                <br/>Initial estimates gave us an approximate mass with which we calculated optimal gear ratios based on efficiency and output speed.
+              </p>
+            </div>
+            <div className="threeColWrapper_items">
+              <p>FAST ACCELERATION<br/>
+                <img src={weightdist} style={{width: "100%", marginBottom:"10px"}} alt="Weight Distribution diagram"/>
+                <br/>By designing the car to have roughly 72% weight distribution towards the drive shaft, we could improve acceleration to reach our top speed quicker
+              </p>
+            </div>
+          </div>
+        <h1 className="sectionTitle">Manufacture & testing</h1>
+          <div className="ColWrapper">
+            <div style={{flex:"0 0 500px"}}><img src={teargearmade} style={{width: "100%", marginBottom:"10px"}} alt="Teargear under the hood"/></div>
+            <div style={{flex:"0 0 300px"}}>
+              <img src={teargeartest} style={{width: "70%", marginBottom:"10px"}} alt="Racing Teargear"/>
+              <p>
+                Our tested top speed was 2.21m/s and when compared to other vehicles showed exceptional disparity.
+              </p>
+            </div>
+          </div>
       </Tab>
     </Tabs>
 

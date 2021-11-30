@@ -53,7 +53,7 @@ function Neutoy(props) {
         We conducted surveys and interviews with various age-ranges of office workers to find out their current exercise trends. Our research showed that most ages do not seek professional exercise services, other than those over 50, and that in most age ranges, a considerable amount of exercise carried out is simple stretching.
         <br/>In addition, we looked at tracking how frequently they exercised and how effective they felt this was for them. Here we were able to hone in on a target market as we looked to identify age groups that had a high frequency of exercise but low effectiveness.
       </p>
-      <div className="ColWrapper">
+      <div className="ColWrapper"style={{backgroundColor:"white"}}>
         <div style={{flex:"0 0 250px"}}>
           <img src={graph1} style={{width: "100%", marginBottom:"10px", alignSelf:"center"}} alt="Relief methods for different age ranges graph"/>
         </div>
@@ -84,7 +84,7 @@ function Neutoy(props) {
         <blockquote>👉 The interactive experience was unique and fun, but the exercises were insignificant</blockquote>
         Thus, as a team, we decided to make an important pivot in our objectives; focus on building out the unique interactive experience.
       </p>
-      <div className="ColWrapper">
+      <div className="ColWrapper" style={{backgroundColor:"white"}}>
         <div style={{flex:"0 0 495px"}}>
           <img src={pivot1} style={{width: "100%", marginBottom:"10px", alignSelf:"center"}} alt="Relief methods for different age ranges graph"/>
         </div>
