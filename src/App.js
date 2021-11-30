@@ -22,26 +22,26 @@ function App() {
     <div className="App">
 
       <header>
-        <Link to="/" className="headLink" id="myLogo">
+        <Link to="/my-portfolio" className="headLink" id="myLogo">
           <h1 style={{margin:0,fontWeight: "900"}}>
             <span id="logo_span">
               junho choi
             </span>
           </h1>
         </Link>
-        <Link to="/currentwork" className="headLink"><h1 style={{fontWeight: "200", fontSize:"20px"}}>current work</h1></Link>
-        <Link to="/about" className="headLink"><h1 style={{fontWeight: "200", fontSize:"20px"}}>about me</h1></Link>
+        <Link to="/my-portfolio/currentwork" className="headLink"><h1 style={{fontWeight: "200", fontSize:"20px"}}>current work</h1></Link>
+        <Link to="/my-portfolio/about" className="headLink"><h1 style={{fontWeight: "200", fontSize:"20px"}}>about me</h1></Link>
       </header>
       <Routes>
-        <Route exact path="/" element={<HomePage/>} />
-        <Route path="/currentwork" element={<CurrentWorkPage/>} />
-        <Route path="/about" element={<AboutPage/>} />
-        <Route path="/appleintern" element={<Apple/>} />
-        <Route path="/engdes" element={<EngDes/>} />
-        <Route path="/presweather" element={<PresWeather/>} />
-        <Route path="/kitchen" element={<Kitchen/>} />
-        <Route path="/neutoy" element={<Neutoy/>} />
-        <Route path="/jsviewhkl" element={<Jsviewhkl/>} />
+        <Route exact path="/my-portfolio" element={<HomePage/>} />
+        <Route path="/my-portfolio/currentwork" element={<CurrentWorkPage/>} />
+        <Route path="/my-portfolio/about" element={<AboutPage/>} />
+        <Route path="/my-portfolio/appleintern" element={<Apple/>} />
+        <Route path="/my-portfolio/engdes" element={<EngDes/>} />
+        <Route path="/my-portfolio/presweather" element={<PresWeather/>} />
+        <Route path="/my-portfolio/kitchen" element={<Kitchen/>} />
+        <Route path="/my-portfolio/neutoy" element={<Neutoy/>} />
+        <Route path="/my-portfolio/jsviewhkl" element={<Jsviewhkl/>} />
       </Routes>
 
       <footer>

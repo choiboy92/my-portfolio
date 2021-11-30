@@ -9,22 +9,22 @@ class LogoCube extends React.Component {
       <div style={{width: 400, height: 400}}>
       <Cube size={400} index="front">
           <div className="cubeFaceItem" style={{backgroundColor: 'black'}}>
-            <Link to="/appleintern" className="projLink"><h1 className="cubeFaceText">APPLE</h1></Link>
+            <Link to="/my-portfolio/appleintern" className="projLink"><h1 className="cubeFaceText">APPLE</h1></Link>
           </div>
           <div className="cubeFaceItem" style={{backgroundColor: 'black'}}>
-            <Link to="/engdes" className="projLink"><h1 className="cubeFaceText">ENGINEERING DESIGN</h1></Link>
+            <Link to="/my-portfolio/engdes" className="projLink"><h1 className="cubeFaceText">ENGINEERING DESIGN</h1></Link>
           </div>
           <div className="cubeFaceItem" style={{backgroundColor: 'black'}}>
-            <Link to="/neutoy" className="projLink"><h1 className="cubeFaceText">NEUTOY</h1></Link>
+            <Link to="/my-portfolio/neutoy" className="projLink"><h1 className="cubeFaceText">NEUTOY</h1></Link>
           </div>
           <div className="cubeFaceItem" style={{backgroundColor: 'black'}}>
-            <Link to="/kitchen" className="projLink"><h1 className="cubeFaceText">ACCESSIBLE KITCHENS</h1></Link>
+            <Link to="/my-portfolio/kitchen" className="projLink"><h1 className="cubeFaceText">ACCESSIBLE KITCHENS</h1></Link>
           </div>
           <div className="cubeFaceItem" style={{backgroundColor: 'black'}}>
-            <Link to="/presweather" className="projLink"><h1 className="cubeFaceText">PRESENT WEATHER NEURAL NETWORK</h1></Link>
+            <Link to="/my-portfolio/presweather" className="projLink"><h1 className="cubeFaceText">PRESENT WEATHER NEURAL NETWORK</h1></Link>
           </div>
           <div className="cubeFaceItem" style={{backgroundColor: 'black'}}>
-            <Link to="/jsviewhkl" className="projLink"><h1 className="cubeFaceText">RUTHERFORD APPLETON LABORATORY</h1></Link>
+            <Link to="/my-portfolio/jsviewhkl" className="projLink"><h1 className="cubeFaceText">RUTHERFORD APPLETON LABORATORY</h1></Link>
           </div>
       </Cube>
       </div>
