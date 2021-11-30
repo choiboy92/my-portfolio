@@ -4,7 +4,7 @@ import './projects.css';
 import Divider from './hooks/divider.js';
 import SideQuickNav from './hooks/sideQuickNav.js';
 
-import promovid from '../Assets/kitchen/Promo_Video.mp4';
+/*import promovid from '../Assets/kitchen/Promo_Video.mp4';*/
 import infographic from '../Assets/kitchen/Kitchen_space_infographic_final.jpeg';
 import usergraph from '../Assets/kitchen/user_research.png';
 import attachment from '../Assets/kitchen/attachment_test.gif';
@@ -100,7 +100,7 @@ function Kitchen(props) {
         <img src={hood} style={{width: "50%", marginBottom:"10px", alignSelf:"center"}} alt="Hood added"/>
       </div>
     <h1 className="sectionTitle">Final design</h1>
-      <video src={promovid} controls width="80%" volume="0.2" style={{alignSelf:"center", marginBottom:"10px"}}/>
+      /*<video src={promovid} controls width="80%" volume="0.2" style={{alignSelf:"center", marginBottom:"10px"}}/>*/
       <img src={finaldesign1} style={{width: "80%", marginBottom:"10px", alignSelf:"center"}} alt="Final design render 1"/>
       <img src={finaldesign2} style={{width: "80%", marginBottom:"10px", alignSelf:"center"}} alt="Final design render 2"/>
     </div>
