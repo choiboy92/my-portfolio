@@ -100,11 +100,10 @@ function Kitchen(props) {
         <img src={hood} style={{width: "50%", marginBottom:"10px", alignSelf:"center"}} alt="Hood added"/>
       </div>
     <h1 className="sectionTitle">Final design</h1>
-      /*<video src={promovid} controls width="80%" volume="0.2" style={{alignSelf:"center", marginBottom:"10px"}}/>*/
       <img src={finaldesign1} style={{width: "80%", marginBottom:"10px", alignSelf:"center"}} alt="Final design render 1"/>
       <img src={finaldesign2} style={{width: "80%", marginBottom:"10px", alignSelf:"center"}} alt="Final design render 2"/>
     </div>
   )
 }
-
+/*<video src={promovid} controls width="80%" volume="0.2" style={{alignSelf:"center", marginBottom:"10px"}}/>*/
 export default Kitchen;
