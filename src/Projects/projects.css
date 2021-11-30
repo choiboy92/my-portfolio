@@ -57,6 +57,8 @@ p.sideQuickNav:hover{
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .threeColWrapper_items {
@@ -67,8 +69,17 @@ p.sideQuickNav:hover{
 .twoColWrapper_items {
   flex: 0 0 400px;
 }
-
+blockquote {
+  font-weight: bolder;
+  align-self: center;
+}
 h1.sectionTitle {
   margin-left:0;
   color: white;
+}
+.nav {
+  align-self: center;
+  margin-bottom: 10px;
+  font-family: 'Jost', sans-serif;
+  font-size:20px;
 }
