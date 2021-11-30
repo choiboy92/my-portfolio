@@ -23,13 +23,13 @@ function App() {
       <header>
         <Link to="/" className="headLink" id="myLogo">
           <h1 style={{margin:0,fontWeight: "900"}}>
-            <span style={{padding: "0 15px", boxShadow:"inset 0 -15px 0 0 #96c8a2"}}>
+            <span id="logo_span">
               junho choi
             </span>
           </h1>
         </Link>
-        <Link to="/currentwork" className="headLink"><h1 style={{fontWeight: "200"}}>current work</h1></Link>
-        <Link to="/about" className="headLink"><h1 style={{fontWeight: "200"}}>about me</h1></Link>
+        <Link to="/currentwork" className="headLink"><h1 style={{fontWeight: "200", fontSize:"20px"}}>current work</h1></Link>
+        <Link to="/about" className="headLink"><h1 style={{fontWeight: "200", fontSize:"20px"}}>about me</h1></Link>
       </header>
       <Routes>
         <Route exact path="/" element={<HomePage/>} />

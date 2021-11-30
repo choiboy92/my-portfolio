@@ -52,6 +52,10 @@ header {
   flex:1 0 500px;
   font-weight: 900;
 }
+#logo_span {
+  padding: 0 15px;
+  box-shadow: inset 0 -15px 0 0 #96c8a2;
+}
 
 footer {
   display: flex;
@@ -155,6 +159,13 @@ ul {
   font-weight: 300;
   list-style-type: circle;
   font-size: 15px;
+}
+
+ul.projectList {
+  color: inherit;
+  font-weight: inherit;
+  list-style-type: circle;
+  font-size: inherit;
 }
 
 .decoLabel {
