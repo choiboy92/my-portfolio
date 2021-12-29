@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import ProjectIntro from "./ProjectPage_intro.js";
 import './projects.css';
 import Divider from './hooks/divider.js';

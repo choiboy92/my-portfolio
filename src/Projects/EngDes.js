@@ -1,7 +1,6 @@
 import React from "react";
 import ProjectIntro from "./ProjectPage_intro.js";
 import './projects.css';
-import Divider from './hooks/divider.js';
 import SideQuickNav from './hooks/sideQuickNav.js';
 import Tabs from 'react-bootstrap/Tabs';
 import Tab from 'react-bootstrap/Tab';

@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 //import ReactDOM from "react-dom";
-//import Divider from './divider.js';
 import Canvas from "./hooks/useCanvas.js";
 
 
