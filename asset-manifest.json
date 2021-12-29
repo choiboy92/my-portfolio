@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.ab34b08d.chunk.css",
-    "main.js": "/my-portfolio/static/js/main.7cadab2e.chunk.js",
-    "main.js.map": "/my-portfolio/static/js/main.7cadab2e.chunk.js.map",
+    "main.css": "/my-portfolio/static/css/main.34e19cde.chunk.css",
+    "main.js": "/my-portfolio/static/js/main.a936db89.chunk.js",
+    "main.js.map": "/my-portfolio/static/js/main.a936db89.chunk.js.map",
     "runtime-main.js": "/my-portfolio/static/js/runtime-main.65737744.js",
     "runtime-main.js.map": "/my-portfolio/static/js/runtime-main.65737744.js.map",
     "static/css/2.383c0125.chunk.css": "/my-portfolio/static/css/2.383c0125.chunk.css",
@@ -12,7 +12,7 @@
     "static/js/3.6690af25.chunk.js.map": "/my-portfolio/static/js/3.6690af25.chunk.js.map",
     "index.html": "/my-portfolio/index.html",
     "static/css/2.383c0125.chunk.css.map": "/my-portfolio/static/css/2.383c0125.chunk.css.map",
-    "static/css/main.ab34b08d.chunk.css.map": "/my-portfolio/static/css/main.ab34b08d.chunk.css.map",
+    "static/css/main.34e19cde.chunk.css.map": "/my-portfolio/static/css/main.34e19cde.chunk.css.map",
     "static/js/2.4fa86168.chunk.js.LICENSE.txt": "/my-portfolio/static/js/2.4fa86168.chunk.js.LICENSE.txt",
     "static/media/Final_front_render.654ca85c.jpg": "/my-portfolio/static/media/Final_front_render.654ca85c.jpg",
     "static/media/Hook_design.57cda2c2.jpg": "/my-portfolio/static/media/Hook_design.57cda2c2.jpg",
@@ -24,6 +24,7 @@
     "static/media/Nuffield_mtz_datafile_ex.78273e58.png": "/my-portfolio/static/media/Nuffield_mtz_datafile_ex.78273e58.png",
     "static/media/SDOF_model_sketch.ca9d133e.jpg": "/my-portfolio/static/media/SDOF_model_sketch.ca9d133e.jpg",
     "static/media/SepVel_testing_setup.e80f019d.jpg": "/my-portfolio/static/media/SepVel_testing_setup.e80f019d.jpg",
+    "static/media/apple_architecture.9d61adc2.png": "/my-portfolio/static/media/apple_architecture.9d61adc2.png",
     "static/media/attachment_test.dfe4e52d.gif": "/my-portfolio/static/media/attachment_test.dfe4e52d.gif",
     "static/media/aws_presence.0bd27a7a.gif": "/my-portfolio/static/media/aws_presence.0bd27a7a.gif",
     "static/media/backboard.e46eecaf.jpg": "/my-portfolio/static/media/backboard.e46eecaf.jpg",
@@ -64,7 +65,7 @@
     "static/js/runtime-main.65737744.js",
     "static/css/2.383c0125.chunk.css",
     "static/js/2.4fa86168.chunk.js",
-    "static/css/main.ab34b08d.chunk.css",
-    "static/js/main.7cadab2e.chunk.js"
+    "static/css/main.34e19cde.chunk.css",
+    "static/js/main.a936db89.chunk.js"
   ]
 }
