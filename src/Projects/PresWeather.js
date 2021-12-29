@@ -33,21 +33,23 @@ function PresWeather(props) {
       </div>
     </div>
     <Divider color="white"/>
-      <div className="ColWrapper">
-        <div style={{flex:"0 0 600px"}}>
-          <h1 className="sectionTitle">The Problem</h1>
-          <p style={{paddingLeft:0}}>
+    <div className="vl"></div>
+
+      <div className="ColWrapper" style={{alignItems:"center", justifyContent:"center"}}>
+        <h1 className="sectionTitle" style={{margin:"0"}}>The Problem</h1>
+
+          <p style={{marginLeft:"40px", marginRight:"40px", flex:"1 0 300px"}}>
             The Korean Meteorological Agency (KMA) has access to 94 manned weather stations, where conditions are classified in order to get real-time information across the country. However, data such as visibility, rainfall and wind among others are abundant in 464 other unmanned automatic weather stations (AWS) across South Korea, yet they are unable to carry out accurate classification. Current classification methods based off atmospheric relationships can only reach accuracies of roughly 70%.
           </p>
-        </div>
-        <img src={aws} style={{flex:"0 0 300px", marginBottom:"10px", alignSelf:"center"}} alt="AWS distribution"/>
+        <img src={aws} style={{flex:"0 0 240px", marginBottom:"10px", alignSelf:"center"}} alt="AWS distribution"/>
       </div>
+      <Divider color="white"/>
       <h1 className="sectionTitle">Realising the full potential of AWS</h1>
         <p>
           Being able to classify conditions accurately with AWS will enable a much more precise idea of what is happening across the country and fully realise the potential of AWS as an unmanned network.
           <br/>Neural networks developed using PyTorch were researched as an effective and simple solution to this. Training and validation data was comprised from 9000 data recordings from manned stations, each with 5 different sensor readings, and applying processing techniques such as smoothing functions and normalisation.
         </p>
-        <img src={dataset} style={{width:"40%", marginBottom:"10px", alignSelf:"center"}} alt="Dataset example"/>
+        <img src={dataset} style={{width:"30%", marginBottom:"10px", alignSelf:"center"}} alt="Dataset example"/>
       <div className="ColWrapper">
         <div style={{flex:"0 0 600px"}}>
           <h1 className="sectionTitle">Training the model (and myself)</h1>
@@ -57,7 +59,7 @@ function PresWeather(props) {
             <br/>The code can be found in my Github
           </p>
         </div>
-        <div style={{backgroundColor:"grey", flex:"0 0 500px"}}>
+        <div style={{backgroundColor:"grey", flex:"0 0 500px", borderRadius:"20px", marginTop:"100px"}}>
           <img src={results} style={{width:"100%", alignSelf:"center", padding:"10px"}} alt="NN model accuracies"/>
           <p>
             The final model structure:
@@ -71,6 +73,7 @@ function PresWeather(props) {
           </p>
         </div>
       </div>
+      <Divider color="white"/>
       <h1 className="sectionTitle">The Impact</h1>
         <p>
           Over the course of a month, I worked on refining the model; experimenting with various model parameters. Over this period, I learnt a significant amount about refining neural networks and balancing bias and variance. In the end, I was able to achieve an average accuracy of 90%, with some conditions showing close to 100% classification accuracy.

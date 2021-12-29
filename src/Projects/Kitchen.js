@@ -42,11 +42,13 @@ function Kitchen(props) {
       </div>
     </div>
     <Divider color="white"/>
+    <div className="vl"></div>
     <h1 className="sectionTitle">The Problem</h1>
       <img src={infographic} style={{width: "80%", marginBottom:"10px", alignSelf:"center"}} alt="Kitchen Infographic"/>
       <p>
         With growing population density in cities and multi-functionality in how the kitchen space is being used, kitchens have largely not evolved over the last 50 years. We saw this as both a problem and an opportunity; how can we better suit the use cases and accessibility needs of the modern kitchen user.
       </p>
+      <Divider color="white"/>
     <h1 className="sectionTitle">Understanding the modern kitchen user</h1>
       <p>
         User research and surveys were conducted especially concentrated on the 19-29 age range of young adults that typically make up a large proportion of city populations. Our research tried to quantify living conditions and identify areas within the home that user felt was unaccessible.
@@ -62,11 +64,13 @@ function Kitchen(props) {
         <li>LACK OF MULTI_FUNCTIONALITY: the growing trends in the multi-functionality of the kitchen were not being reflected in how storage solutions were evolving.</li>
       </ol>
       </p>
+      <Divider color="white"/>
     <h1 className="sectionTitle">Ideation</h1>
       <p>
         Brainstorming a range of ideas, they were categorised and whittled down into three overall designs. They were then evaluated based on factors such as the how well it solves the problem, ease of implementation and design and the potential impact of the design.
         <br/>The final concept settled on was a modular cupboard hook storage; a concept that makes readily used items more accessible and fits the diverse needs of the modern kitchen user.
       </p>
+      <Divider color="white"/>
     <h1 className="sectionTitle">Design & Prototyping</h1>
       <div className="ColWrapper">
         <div className="twoColWrapper_items">
@@ -91,6 +95,7 @@ function Kitchen(props) {
           <img src={backboard_vector} style={{width: "100%", marginBottom:"10px", alignSelf:"center"}} alt="Illustration of Hooked"/>
         </div>
       </div>
+      <Divider color="white"/>
     <h1 className="sectionTitle">Refining the design</h1>
       <p>
         Prototyping helped us identify key limitations in our design early on. Notably aspects such as sliding of the backboard and dust and spills off countertops potentially hitting the items, which was solved by implement rubber feet and designing a splash hood respectively.

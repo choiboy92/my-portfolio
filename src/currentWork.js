@@ -1,5 +1,5 @@
 //import React from "react"
-import React, { useRef, useEffect } from 'react';
+import React from 'react';
 import kneevid from './Assets/currentwork/femur_Talbot_video.mov';
 import blind from './Assets/currentwork/ryoji-iwata-_dVxl4eE1rk-unsplash.jpg';
 import filmcamera from './Assets/currentwork/hello-i-m-nik-odbndb-HFi4-unsplash.jpg';

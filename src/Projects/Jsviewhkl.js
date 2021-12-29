@@ -31,35 +31,39 @@ function Jsviewhkl(props) {
       </div>
     </div>
     <Divider color="white"/>
+    <div className="vl"></div>
       <h1 className="sectionTitle">The Problem</h1>
         <p>
   				X-ray crystallography is an important scientific method used in discerning structures of a crystal. This analysis often produces a large amount of data that needs to be manipulated before presenting to the user. However, despite the software intensive nature of the process, data formats, processing and visualisation methods poses some issues:
-        </p>
-        <img src={mtz} style={{width: "100%", marginBottom:"10px"}} alt="mtz file"/>
-        <p>
+          <br/>
         <ul className="projectList">
           <li> Outdated: file formats and desktop programs from 1989 are still being used</li>
           <li> Client-based applications: difficult to track data changes, dependant on access to a desktop with the program installed</li>
         </ul>
         </p>
+        <img src={mtz} style={{width: "100%", marginBottom:"10px"}} alt="mtz file"/>
+
+        <Divider color="white"/>
       <h1 className="sectionTitle">My Solution</h1>
         <p>
           Working under the of my mentor, I researched the issues behind the current method and devised my simple solution:
           <blockquote>Prototype one aspect of the application in a dynamic website format</blockquote>
           The aspect I chose was the ViewHKL portion of the application wherein the diffraction pattern could be visualised in h, k, and l planes. HTML, CSS, JQuery and Javascript were used in developing the prototype in 3 weeks, all of which I had to learn.
         </p>
+        <Divider color="white"/>
       <h1 className="sectionTitle">Comparing old to new</h1>
         <img src={comparison} style={{width: "100%", marginBottom:"10px"}} alt="JSviewHKL comparison"/>
+        <Divider color="white"/>
       <h1 className="sectionTitle">Results</h1>
         <div className="ColWrapper">
           <div className="threeColWrapper_items">
-            <p>🏁 <br/>Proved and tested a working prototype that replicated the functionality and insight of ViewHKL</p>
+            <p style={{textAlign:"center"}}>🏁 <br/>Proved and tested a working prototype that replicated the functionality and insight of ViewHKL</p>
           </div>
           <div className="threeColWrapper_items">
-            <p>🎖<br/>Awarded Gold Crest Award for research report</p>
+            <p style={{textAlign:"center"}}>🎖<br/>Awarded Gold Crest Award for research report</p>
           </div>
           <div className="threeColWrapper_items">
-            <p>🎉 <br/>Finalist at Big Bang Young Scientists of the Year 2018</p>
+            <p style={{textAlign:"center"}}>🎉 <br/>Finalist at Big Bang Young Scientists of the Year 2018</p>
           </div>
         </div>
         <p>

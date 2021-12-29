@@ -37,23 +37,26 @@ function Neutoy(props) {
       </div>
     </div>
     <Divider color="white"/>
+    <div className="vl"></div>
     <div className="ColWrapper">
-      <div style={{flex:"0 0 200px"}}><h1 className="sectionTitle">The Problem</h1></div>
+      <div style={{flex:"0 0 300px", display:"flex", alignItems:"center"}}><h1 className="sectionTitle">The Problem</h1></div>
       <p style={{flex:"0 0 500px", marginLeft:"10%",marginRight:"10%"}}>
         Health and fitness tools have often required large or expensive systems to be purchased. Even with the use of wearables or trackers they exhibit poor adoption and continued usage. We wanted to explore ways to bring health solutions to users right to them.
       </p>
     </div>
+    <Divider color="white"/>
     <h1 className="sectionTitle">Refining our problem</h1>
       <p>
         The issues and limitations of health technology is a broad and vast issue with many research papers and literature reviews about it. The large scope of the issue meant that, as a team, it was important to refine what problem we were looking to solve.
         <br/>We decided that we would look at building healthy habits, in particular honing in on the average office worker market; a particular subset that typically has little time and higher stress.
       </p>
+      <Divider color="white"/>
     <h1 className="sectionTitle">Market Research</h1>
       <p>
         We conducted surveys and interviews with various age-ranges of office workers to find out their current exercise trends. Our research showed that most ages do not seek professional exercise services, other than those over 50, and that in most age ranges, a considerable amount of exercise carried out is simple stretching.
         <br/>In addition, we looked at tracking how frequently they exercised and how effective they felt this was for them. Here we were able to hone in on a target market as we looked to identify age groups that had a high frequency of exercise but low effectiveness.
       </p>
-      <div className="ColWrapper"style={{backgroundColor:"white"}}>
+      <div className="ColWrapper"style={{backgroundColor:"white", marginLeft:0, marginRight:0}}>
         <div style={{flex:"0 0 250px"}}>
           <img src={graph1} style={{width: "100%", marginBottom:"10px", alignSelf:"center"}} alt="Relief methods for different age ranges graph"/>
         </div>
@@ -70,6 +73,7 @@ function Neutoy(props) {
           <li>feels current methods are ineffective</li>
         </ol>
       </p>
+      <Divider color="white"/>
     <h1 className="sectionTitle">MVP</h1>
       <p>
         I became involved in the project at a time where the technologies that were to be used were somewhat decided. In order to make the uptake as easy as possible we wanted to use a platform which many were familiar with; the website.
@@ -78,13 +82,14 @@ function Neutoy(props) {
       <video src={lightbulb} autoplay="true" loop="true" width="80%" volume="0.2" style={{alignSelf:"center", marginBottom:"10px"}}/>
       <video src={papercrush} autoplay="true" loop="true" width="80%" volume="0.2" style={{alignSelf:"center", marginBottom:"10px"}}/>
       <video src={tissue} autoplay="true" loop="true" width="80%" volume="0.2" style={{alignSelf:"center", marginBottom:"10px"}}/>
+      <Divider color="white"/>
     <h1 className="sectionTitle">Pivot</h1>
       <p>
         Upon preliminary user testing, an overwhelming amount of feedback could be summarised in the following:
         <blockquote>👉 The interactive experience was unique and fun, but the exercises were insignificant</blockquote>
         Thus, as a team, we decided to make an important pivot in our objectives; focus on building out the unique interactive experience.
       </p>
-      <div className="ColWrapper" style={{backgroundColor:"white"}}>
+      <div className="ColWrapper" style={{backgroundColor:"white", marginLeft:0, marginRight:0}}>
         <div style={{flex:"0 0 495px"}}>
           <img src={pivot1} style={{width: "100%", marginBottom:"10px", alignSelf:"center"}} alt="Relief methods for different age ranges graph"/>
         </div>

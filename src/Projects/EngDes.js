@@ -60,12 +60,16 @@ function EngDes(props) {
             <p>ROLE:<br/> {roleMetalpod}</p>
           </div>
         </div>
-        <Divider color="white"/>
+        <div style={{marginLeft:"25%",marginRight:"25%", marginTop:"50px", height:"50px", borderTop:"2px solid white", display:"flex"}}></div>
+        <div className="vl"></div>
         <h1 className="sectionTitle">Literature Review</h1>
+        <div style={{marginLeft:"25%",marginRight:"25%", marginTop:"50px", height:"50px", borderTop:"2px solid white", display:"flex"}}></div>
         <h1 className="sectionTitle">Concept Sketches</h1>
+        <div style={{marginLeft:"25%",marginRight:"25%", marginTop:"50px", height:"50px", borderTop:"2px solid white", display:"flex"}}></div>
+        <div style={{marginLeft:"25%",marginRight:"25%", marginTop:"50px", height:"50px", borderTop:"2px solid white", display:"flex"}}></div>
         <h1 className="sectionTitle">Design Features</h1>
-          <img src={metalpodExploded} style={{width: "90%"}} alt="Exploded Metalpod"/>
-        <div className="ColWrapper" style={{marginTop:"0"}}>
+          <img src={metalpodExploded} style={{width: "85%"}} alt="Exploded Metalpod"/>
+        <div className="ColWrapper">
           <div className="threeColWrapper_items">
             <p>PROTECTION BY DAMPING
             <img src={sdof} style={{width: "100%", marginBottom:"10px"}} alt="SDOF model"/>
@@ -84,31 +88,32 @@ function EngDes(props) {
             </p>
           </div>
         </div>
-        <img src={deploymentgif} style={{width: "60%", marginBottom:"10px"}} alt="How deployment works"/>
+        <img src={deploymentgif} style={{width: "60%", marginBottom:"50px"}} alt="How deployment works"/>
+        <div style={{marginLeft:"25%",marginRight:"25%", marginTop:"50px", height:"50px", borderTop:"2px solid white", display:"flex"}}></div>
         <h1 className="sectionTitle">Testing & Analysis</h1>
-          <div className="ColWrapper">
+          <div className="ColWrapper" style={{marginLeft:"10%", marginRight:"10%", justifyContent:"center"}}>
             <div style={{flex: "1 0 400px"}}>
-              <p>BURNWIRE TEST
-              <img src={burnwire} style={{width: "100%", marginBottom:"10px"}} alt="Burnwire in test configuration"/>
-                <br/>The burnwire mechanism was also tested to evaluate the real required voltages to achieve a cutting time below 10s.
+              <img src={burnwire} style={{width: "60%", marginBottom:"10px"}} alt="Burnwire in test configuration"/>
+                <p style={{textAlign:"left"}}>BURNWIRE TEST</p>
+                <p><br/>The burnwire mechanism was also tested to evaluate the real required voltages to achieve a cutting time below 10s.
               </p>
             </div>
             <div style={{flex: "1 0 400px"}}>
-              <p>SEPARATION VELOCITY
-              <img src={sepvelsetup} style={{width: "100%", marginBottom:"10px"}} alt="SepVel test setup"/>
-                <br/>A simple pulley test was devised as a way to
+              <img src={sepvelsetup} style={{width: "60%", marginBottom:"10px"}} alt="SepVel test setup"/>
+                <p style={{textAlign:"left"}}>SEPARATION VELOCITY</p>
+                <p><br/>A simple pulley test was devised as a way to
               </p>
             </div>
           </div>
-          <div className="ColWrapper">
+          <div className="ColWrapper" style={{marginLeft:"10%", marginRight:"10%", justifyContent:"space-evenly"}}>
             <div style={{flex: "1 0 400px"}}>
               <p>VIBRATION TEST<br/>
                 Both sine sweeps and random vibration tests were carried out on a shaker table to assess the deployment system's ability to protect the satellite under launch conditions and evaluate the accuracy of our SDOF model.
-                <br/><img src={vibration} style={{width: "70%", marginBottom:"10px"}} alt="Vibration profile results"/>
+                <br/><img src={vibration} style={{width: "100%", marginBottom:"10px"}} alt="Vibration profile results"/>
                 <br/>Both sine sweeps and random vibration tests were carried out on a shaker table to assess the deployment system's ability to protect the satellite under launch conditions and evaluate the accuracy of our SDOF model.
               </p>
             </div>
-            <div style={{flex: "0 0 400px"}}>
+            <div style={{flex: "1 0 400px"}}>
               <img src={shakertable} style={{width: "100%", marginBottom:"10px"}} alt="Vibration test setup"/>
             </div>
           </div>
@@ -123,7 +128,8 @@ function EngDes(props) {
             <p>ROLE:<br/> {roleTorpedo}</p>
           </div>
         </div>
-        <Divider color="white"/>
+        <div style={{marginLeft:"25%",marginRight:"25%", marginTop:"50px", height:"50px", borderTop:"2px solid white", display:"flex"}}></div>
+        <div className="vl"></div>
         <h1 className="sectionTitle">Design features</h1>
           <img src={torpedo} style={{width: "100%", marginBottom:"0"}} alt="Torpedo Render"/>
           <div className="ColWrapper" style={{marginTop:"0"}}>
@@ -143,6 +149,7 @@ function EngDes(props) {
               </p>
             </div>
           </div>
+          <div style={{marginLeft:"25%",marginRight:"25%", marginTop:"50px", height:"50px", borderTop:"2px solid white", display:"flex"}}></div>
         <h1 className="sectionTitle">Technical Poster</h1>
           <img src={torpedo_poster} style={{width: "60%", marginBottom:"10px"}} alt="Torpedo Technical Poster"/>
       </Tab>
@@ -156,7 +163,8 @@ function EngDes(props) {
             <p>ROLE:<br/> {roleTeargear}</p>
           </div>
         </div>
-        <Divider color="white"/>
+        <div style={{marginLeft:"25%",marginRight:"25%", marginTop:"50px", height:"50px", borderTop:"2px solid white", display:"flex"}}></div>
+        <div className="vl"></div>
         <h1 className="sectionTitle">Concept Sketches</h1>
           <div className="ColWrapper">
             <div style={{flex: "0 0 400px"}}><img src={teargearConcept} style={{width: "100%", marginBottom:"10px"}} alt="Teargear Concept Sketch"/></div>
@@ -166,6 +174,7 @@ function EngDes(props) {
               </p>
             </div>
           </div>
+          <div style={{marginLeft:"25%",marginRight:"25%", marginTop:"50px", height:"50px", borderTop:"2px solid white", display:"flex"}}></div>
         <h1 className="sectionTitle">Design Features</h1>
           <img src={teargearRender} style={{width: "60%", marginBottom:"10px"}} alt="Teargear render"/>
           <div className="ColWrapper">
@@ -188,6 +197,7 @@ function EngDes(props) {
               </p>
             </div>
           </div>
+          <div style={{marginLeft:"25%",marginRight:"25%", marginTop:"50px", height:"50px", borderTop:"2px solid white", display:"flex"}}></div>
         <h1 className="sectionTitle">Manufacture & testing</h1>
           <div className="ColWrapper">
             <div style={{flex:"0 0 500px"}}><img src={teargearmade} style={{width: "100%", marginBottom:"10px"}} alt="Teargear under the hood"/></div>

@@ -54,16 +54,21 @@ p.sideQuickNav:hover{
 
 .ColWrapper {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   justify-content: center;
   margin-top: 10px;
   margin-bottom: 10px;
+  margin-left: 10%;
+  margin-right: 10%;
+  justify-content: space-evenly;
 }
 
 .threeColWrapper_items {
-  flex: 1 0 300px;
+  flex: 0 0 400px;
   background-color: grey;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .twoColWrapper_items {
@@ -74,12 +79,22 @@ blockquote {
   align-self: center;
 }
 h1.sectionTitle {
-  margin-left:0;
+  text-align: left;
   color: white;
+  margin-left: 10%;
 }
 .nav {
   align-self: center;
   margin-bottom: 10px;
   font-family: 'Jost', sans-serif;
   font-size:20px;
+}
+
+.vl {
+  display:block;
+  position: fixed;
+  top: 100px;
+  bottom: 71px;
+  margin-left: 7%;
+  border-left: 1px solid white;
 }

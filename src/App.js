@@ -23,7 +23,7 @@ function App() {
     <div className="App">
 
       <header>
-        <Link to="/my-portfolio" className="headLink" id="myLogo">
+        <Link to="/my-portfolio/" className="headLink" id="myLogo">
           <h1 style={{margin:0,fontWeight: "900"}}>
             <span id="logo_span">
               junho choi
@@ -36,7 +36,7 @@ function App() {
 
       </header>
       <Routes>
-        <Route exact path="/my-portfolio" element={<HomePage/>} />
+        <Route exact path="/my-portfolio/" element={<HomePage/>} />
         <Route path="/my-portfolio/currentwork" element={<CurrentWorkPage/>} />
         <Route path="/my-portfolio/about" element={<AboutPage/>} />
         <Route path="/my-portfolio/appleintern" element={<Apple/>} />
