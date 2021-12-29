@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.ed6a7b08.chunk.css",
-    "main.js": "/my-portfolio/static/js/main.664f1671.chunk.js",
-    "main.js.map": "/my-portfolio/static/js/main.664f1671.chunk.js.map",
+    "main.css": "/my-portfolio/static/css/main.ab34b08d.chunk.css",
+    "main.js": "/my-portfolio/static/js/main.7cadab2e.chunk.js",
+    "main.js.map": "/my-portfolio/static/js/main.7cadab2e.chunk.js.map",
     "runtime-main.js": "/my-portfolio/static/js/runtime-main.65737744.js",
     "runtime-main.js.map": "/my-portfolio/static/js/runtime-main.65737744.js.map",
     "static/css/2.383c0125.chunk.css": "/my-portfolio/static/css/2.383c0125.chunk.css",
@@ -12,7 +12,7 @@
     "static/js/3.6690af25.chunk.js.map": "/my-portfolio/static/js/3.6690af25.chunk.js.map",
     "index.html": "/my-portfolio/index.html",
     "static/css/2.383c0125.chunk.css.map": "/my-portfolio/static/css/2.383c0125.chunk.css.map",
-    "static/css/main.ed6a7b08.chunk.css.map": "/my-portfolio/static/css/main.ed6a7b08.chunk.css.map",
+    "static/css/main.ab34b08d.chunk.css.map": "/my-portfolio/static/css/main.ab34b08d.chunk.css.map",
     "static/js/2.4fa86168.chunk.js.LICENSE.txt": "/my-portfolio/static/js/2.4fa86168.chunk.js.LICENSE.txt",
     "static/media/Final_front_render.654ca85c.jpg": "/my-portfolio/static/media/Final_front_render.654ca85c.jpg",
     "static/media/Hook_design.57cda2c2.jpg": "/my-portfolio/static/media/Hook_design.57cda2c2.jpg",
@@ -32,10 +32,13 @@
     "static/media/cutlery_drying.d2f6913d.jpg": "/my-portfolio/static/media/cutlery_drying.d2f6913d.jpg",
     "static/media/dataset.fb03f74b.png": "/my-portfolio/static/media/dataset.fb03f74b.png",
     "static/media/deployment.22033081.gif": "/my-portfolio/static/media/deployment.22033081.gif",
+    "static/media/femur_Talbot_video.46af8327.mov": "/my-portfolio/static/media/femur_Talbot_video.46af8327.mov",
     "static/media/freqvseff.35a6638e.png": "/my-portfolio/static/media/freqvseff.35a6638e.png",
     "static/media/gear_calcs.e86c702c.png": "/my-portfolio/static/media/gear_calcs.e86c702c.png",
+    "static/media/hello-i-m-nik-odbndb-HFi4-unsplash.bd69caf0.jpg": "/my-portfolio/static/media/hello-i-m-nik-odbndb-HFi4-unsplash.bd69caf0.jpg",
     "static/media/hood.5ba66f2f.jpg": "/my-portfolio/static/media/hood.5ba66f2f.jpg",
     "static/media/jsViewHKL_comparison.5aff36df.png": "/my-portfolio/static/media/jsViewHKL_comparison.5aff36df.png",
+    "static/media/keyboard.00038069.jpeg": "/my-portfolio/static/media/keyboard.00038069.jpeg",
     "static/media/lightbulb_demo.4cb6ffab.mov": "/my-portfolio/static/media/lightbulb_demo.4cb6ffab.mov",
     "static/media/metalpod_exploded.20b3e300.png": "/my-portfolio/static/media/metalpod_exploded.20b3e300.png",
     "static/media/metalpod_vibration.276f4e2b.png": "/my-portfolio/static/media/metalpod_vibration.276f4e2b.png",
@@ -45,6 +48,7 @@
     "static/media/railings.ed487d00.jpg": "/my-portfolio/static/media/railings.ed487d00.jpg",
     "static/media/reliefmethod.9e14bfc8.png": "/my-portfolio/static/media/reliefmethod.9e14bfc8.png",
     "static/media/rubberfeet.fa0e7608.jpg": "/my-portfolio/static/media/rubberfeet.fa0e7608.jpg",
+    "static/media/ryoji-iwata-_dVxl4eE1rk-unsplash.04e17067.jpg": "/my-portfolio/static/media/ryoji-iwata-_dVxl4eE1rk-unsplash.04e17067.jpg",
     "static/media/shakertable.0b81ad04.jpg": "/my-portfolio/static/media/shakertable.0b81ad04.jpg",
     "static/media/teargear_concept.7361b3d5.png": "/my-portfolio/static/media/teargear_concept.7361b3d5.png",
     "static/media/teargear_made.804ae1cc.png": "/my-portfolio/static/media/teargear_made.804ae1cc.png",
@@ -60,7 +64,7 @@
     "static/js/runtime-main.65737744.js",
     "static/css/2.383c0125.chunk.css",
     "static/js/2.4fa86168.chunk.js",
-    "static/css/main.ed6a7b08.chunk.css",
-    "static/js/main.664f1671.chunk.js"
+    "static/css/main.ab34b08d.chunk.css",
+    "static/js/main.7cadab2e.chunk.js"
   ]
 }
