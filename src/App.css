@@ -138,6 +138,7 @@ p {
   padding-right: 20%;
   flex-wrap: wrap-reverse;
 }
+
 .aboutContainer {
   display: flex;
   justify-content:center;
@@ -172,4 +173,54 @@ ul.projectList {
   display: flex;
   flex: 1 0 200px;
   justify-content: left;
+}
+
+#hobbiesPage {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  justify-content:center;
+  align-items: center;
+}
+
+#currentworkPage {
+  display:flex;
+  flex:1 0;
+  background-color: black;
+  flex-flow: column;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.currentwork_card {
+  display: flex;
+  flex-direction: column;
+  opacity: 0.8;
+  border-radius: 20px;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+}
+.currentwork_card_header {
+  text-align: left;
+  margin-left: 10px;
+  padding-top: 10px;
+  color: grey;
+}
+.currentwork_card_innerdiv {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.currentwork_card_asset {
+  width: 459px;
+  flex:0 0;
+}
+.currentwork_card_desc {
+  margin: 10px;
+  width: 400px;
+  flex: 1 0 auto;
 }

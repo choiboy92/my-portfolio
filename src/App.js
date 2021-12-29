@@ -2,6 +2,7 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter,Routes, Route, Link } from 'react-router-dom';
 import HomePage from './HomePage.js';
+import HobbiesPage from './Hobbies.js';
 import AboutPage from './About.js';
 import CurrentWorkPage from './currentWork.js';
 import Apple from './Projects/Apple.js';
@@ -29,8 +30,10 @@ function App() {
             </span>
           </h1>
         </Link>
-        <Link to="/my-portfolio/currentwork" className="headLink"><h1 style={{fontWeight: "200", fontSize:"20px"}}>current work</h1></Link>
+        <Link to="/my-portfolio/currentwork" className="headLink"><h1 style={{fontWeight: "200", fontSize:"20px"}}>ongoing work</h1></Link>
+        <Link to="/my-portfolio/hobbies" className="headLink"><h1 style={{fontWeight: "200", fontSize:"20px"}}>hobbies</h1></Link>
         <Link to="/my-portfolio/about" className="headLink"><h1 style={{fontWeight: "200", fontSize:"20px"}}>about me</h1></Link>
+
       </header>
       <Routes>
         <Route exact path="/my-portfolio" element={<HomePage/>} />
@@ -42,6 +45,7 @@ function App() {
         <Route path="/my-portfolio/kitchen" element={<Kitchen/>} />
         <Route path="/my-portfolio/neutoy" element={<Neutoy/>} />
         <Route path="/my-portfolio/jsviewhkl" element={<Jsviewhkl/>} />
+        <Route path="/my-portfolio/hobbies" element={<HobbiesPage/>} />
       </Routes>
 
       <footer>
