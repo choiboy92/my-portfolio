@@ -229,3 +229,30 @@ br {
   content: ""; /* clears default height */
   margin-top: 20px; /* change this to whatever height you want it */
 }
+.hover-info {
+  text-align: center;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  width: 100%;
+  padding: 20px;
+  display: block;
+  box-sizing: border-box;
+}
+
+.hover-info .hover-info-title {
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #999;
+  padding: 5px;
+  line-height: 32px;
+}
+
+.hover-info .hover-info-description {
+  font-size: 18px;
+  font-weight: 100;
+  color: #aaa;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
