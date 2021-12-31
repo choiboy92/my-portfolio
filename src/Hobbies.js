@@ -19,8 +19,8 @@ function HobbiesPage() {
                             type: 'image',
                             height: 100,
                             width: 50,
-                            title: 'sample-title',
-                            description: 'sample-description',
+                            title: 'Film Photography',
+                            description: 'self-portrait c2019',
                             focalPoint: [0, 0],
                     }
             },
@@ -31,8 +31,8 @@ function HobbiesPage() {
                             type: 'image',
                             height: 40,
                             width: 100,
-                            title: 'sample-title',
-                            description: 'sample-description',
+                            title: 'Film Photography',
+                            description: 'not always black and white',
                             focalPoint: [0, 0],
                     }
             },
@@ -43,8 +43,8 @@ function HobbiesPage() {
                             type: 'video',
                             height: 57,
                             width: 100,
-                            title: 'sample-title',
-                            description: 'sample-description',
+                            title: 'Travel Videos',
+                            description: 'Trip to Brighton 2020',
                             focalPoint: [0, 0],
                     }
             },
@@ -55,8 +55,8 @@ function HobbiesPage() {
                             type: 'image',
                             height: 100,
                             width: 80,
-                            title: 'sample-title',
-                            description: 'sample-description',
+                            title: 'Film Photography',
+                            description: 'above the clouds',
                             focalPoint: [0, 0],
                     }
             },
@@ -67,8 +67,8 @@ function HobbiesPage() {
                             type: 'image',
                             height: 100,
                             width: 50,
-                            title: 'sample-title',
-                            description: 'sample-description',
+                            title: 'Scuba Diving',
+                            description: 'Jeju Island 2020',
                             focalPoint: [0, 0],
                     }
             },
@@ -79,8 +79,8 @@ function HobbiesPage() {
                             type: 'video',
                             height: 57,
                             width: 100,
-                            title: 'sample-title',
-                            description: 'sample-description',
+                            title: 'Scuba Diving',
+                            description: 'Jeju Island 2017',
                             focalPoint: [0, 0],
                     }
             },/*
@@ -130,8 +130,8 @@ function HobbiesPage() {
                             type: 'image',
                             height: 50,
                             width: 100,
-                            title: 'sample-title',
-                            description: 'sample-description',
+                            title: 'Squash',
+                            description: 'Imperial Varsity 2019',
                             focalPoint: [0, 0],
                     }
             },
@@ -148,16 +148,13 @@ function HobbiesPage() {
       scrollDirection: 1,
       videoSound: false,
       videoPlay: 'auto',
+      overlayAnimation: 'FADE_IN',
     };
 
     const customHoverRenderer = (itemProps) => (
       <div class="hover-info">
-        <div class="hover-info-title">
-          <p>{itemProps.title}</p>
-        </div>
-        <div class="hover-info-description">
+          <p class="hover-info-title">{itemProps.title}</p>
           <p>{itemProps.description}</p>
-        </div>
       </div>
 
     );
