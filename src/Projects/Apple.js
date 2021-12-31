@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import ProjectIntro from "./ProjectPage_intro.js";
 import './projects.css';
 import Divider from './hooks/divider.js';
@@ -10,12 +10,12 @@ const description = "Independent project to help Apple find a way to tackle the 
 const role = "IS&T Machine Learning Intern"
 
 function Apple(props) {
-  /*useEffect(() => {
-    window.test();
-  }, []);*/
+  useEffect(() => {
+    window.apple_anime();
+  }, []);
 
   return (
-    <div className="ProjectPage">
+    <div className="ProjectPage" onScroll="getScrollPercent()">
     <ProjectIntro
     	name="Apple\n   Internship"
       //background='/appleBG.jpg'
@@ -36,7 +36,7 @@ function Apple(props) {
     </div>
     <Divider color="white"/>
     <div className="vl"></div>
-    <div className="ColWrapper" style={{alignItems:"center"}}>
+    <div className="ColWrapper" style={{alignItems:"center"}} id="apple_problem">
       <h1 className="sectionTitle">The Problem</h1>
       <p style={{flex:"0 0 500px", marginLeft:"10%",marginRight:"10%"}}>
         For a company renowned for its design, counterfeiting is a huge problem. Fake Airpods alone have cost Apple a reported $3.2 bn USD in the last 9 months alone according to a US customs report.
@@ -44,6 +44,7 @@ function Apple(props) {
       </p>
     </div>
     <Divider color="white"/>
+    <div id="apple_research">
     <h1 className="sectionTitle">Research</h1>
       <div className="ColWrapper">
       <p style={{flex:"1 0 300px", marginLeft:"10%", marginRight:"10%"}}>
@@ -60,7 +61,9 @@ function Apple(props) {
         <br/>Once the pipeline of the current process was identified, the next step was to identify whereabouts in the pipeline I could offer a solution.
       </p>
       </div>
+    </div>
       <Divider color="white"/>
+    <div id="apple_ideation">
     <h1 className="sectionTitle">Ideation</h1>
       <p>
         Given the ongoing deployment of the system, I cannot share the specific details of the solution. However, on a high level, the ideation involved looking at how I could refine the existing pipeline and make it more efficient.
@@ -69,18 +72,23 @@ function Apple(props) {
         <blockquote style={{textAlign:"center"}}>Faster, easier, scalable, secure, integrated, automated</blockquote>
       </p>
       <Divider color="white"/>
+    </div>
+    <div id="apple_mvp">
     <h1 className="sectionTitle">MVP Development</h1>
       <img src={arch} style={{width: "90%", marginBottom:"10px", alignSelf:"center"}} alt="System Architecture"/>
       <p>
         Having researched the various possible ways to present and test a solution, I settled on developing a React application with a Flask web server and RabbitMQ worker system. This allows the MVP to be scalable while offering the native data processing and machine learning capabilities that the Python worker script can offer.
         <br/>Having tested the technicalities of the system, work was done to ensure that the application met internal design and accessibility standards.
       </p>
+    </div>
       <Divider color="white"/>
+    <div id="apple_outcome">
     <h1 className="sectionTitle">Outcome</h1>
       <p>
         The project culminated in a Keynote presented to senior directors. This showcased both the development of the tool along with the roadmap to expand its use cases to other tasks within the infrastructure.
         <br/>The handover process combined with effective networking was able to bring together technical and operational teams to ensure that the project would be supported and continued beyond the internship.
       </p>
+    </div>
     </div>
   )
 }

@@ -92,8 +92,55 @@ function homePage_anime() {
   })
 }
 
+function getScrollPercent() {
+    var h = document.documentElement,
+        b = document.body,
+        st = 'scrollTop',
+        sh = 'scrollHeight';
+    //console.log((h[st]||b[st]) / ((h[sh]||b[sh]) - h.clientHeight) * 100)
+    return (h[st]||b[st]) / ((h[sh]||b[sh]) - h.clientHeight);
+}
 
+function apple_anime() {
+  var tl = anime.timeline({
+    duration: 200,
+    elasticity: 200,
+    easing: 'easeInOutSine',
+    autoplay: false
+  });
 
-/*window.onload = () => {
+  tl
+  .add({
+    targets: '#apple_outcome',
+    opacity: [0, 1],
+    translateX: [100, 0],
+  }, 400)
+  .add({
+    targets: '#apple_mvp',
+    translateY: [200, 0],
+  }, 300)
+  .add({
+    targets: '#apple_ideation',
+    translateY: [200, 0],
+  }, 200)
+  .add({
+    targets: '#apple_research',
+    translateY: [200, 0],
+  }, 150)
+  .add({
+    targets: '#apple_problem',
+    opacity: [0, 1],
+    translateX: [100, 0],
+  }, 0)
+
+  window.onscroll = () => {
+    tl.seek(tl.duration * getScrollPercent());
+  }
+}
+/*window.onscroll = () => {
+  tl.seek(tl.duration * getScrollPercent());
+}*/
+
+window.onload = () => {
     init();
-};*/
+};
