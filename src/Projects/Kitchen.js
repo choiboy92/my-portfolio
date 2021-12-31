@@ -1,7 +1,6 @@
-import React from "react";
+import React,{useEffect} from "react";
 import ProjectIntro from "./ProjectPage_intro.js";
 import './projects.css';
-import Divider from './hooks/divider.js';
 import SideQuickNav from './hooks/sideQuickNav.js';
 
 /*import promovid from '../Assets/kitchen/Promo_Video.mp4';*/
@@ -22,6 +21,10 @@ const role = "Project Team Leader"
 
 
 function Kitchen(props) {
+  useEffect(() => {
+    window.kitchen_anime();
+  }, []);
+
   return (
     <div className="ProjectPage">
     <ProjectIntro
@@ -34,21 +37,24 @@ function Kitchen(props) {
     <SideQuickNav/>
     <div className="introDescWrapper">
       <div style={{flex:"2 0 150px", border:"1px solid white"}}>
-        <p>DESCRIPTION:<br/>
+        <p><br/>DESCRIPTION:<br/>
          {description}</p>
       </div>
       <div style={{flex:"1 0 100px", border:"1px solid white"}}>
-        <p>ROLE:<br/> {role}</p>
+        <p><br/>ROLE:<br/>{role}</p>
       </div>
     </div>
-    <Divider color="white"/>
     <div className="vl"></div>
+      <div className="divider"/>
+    <div id="kitchen_problem">
     <h1 className="sectionTitle">The Problem</h1>
       <img src={infographic} style={{width: "80%", marginBottom:"10px", alignSelf:"center"}} alt="Kitchen Infographic"/>
       <p>
         With growing population density in cities and multi-functionality in how the kitchen space is being used, kitchens have largely not evolved over the last 50 years. We saw this as both a problem and an opportunity; how can we better suit the use cases and accessibility needs of the modern kitchen user.
       </p>
-      <Divider color="white"/>
+    </div>
+      <div className="divider"/>
+    <div id="kitchen_research">
     <h1 className="sectionTitle">Understanding the modern kitchen user</h1>
       <p>
         User research and surveys were conducted especially concentrated on the 19-29 age range of young adults that typically make up a large proportion of city populations. Our research tried to quantify living conditions and identify areas within the home that user felt was unaccessible.
@@ -64,20 +70,23 @@ function Kitchen(props) {
         <li>LACK OF MULTI_FUNCTIONALITY: the growing trends in the multi-functionality of the kitchen were not being reflected in how storage solutions were evolving.</li>
       </ol>
       </p>
-      <Divider color="white"/>
+    </div>
+      <div className="divider"/>
+    <div id = "kitchen_ideation">
     <h1 className="sectionTitle">Ideation</h1>
       <p>
         Brainstorming a range of ideas, they were categorised and whittled down into three overall designs. They were then evaluated based on factors such as the how well it solves the problem, ease of implementation and design and the potential impact of the design.
         <br/>The final concept settled on was a modular cupboard hook storage; a concept that makes readily used items more accessible and fits the diverse needs of the modern kitchen user.
       </p>
-      <Divider color="white"/>
+    </div>
+      <div className="divider"/>
     <h1 className="sectionTitle">Design & Prototyping</h1>
       <div className="ColWrapper">
-        <div className="twoColWrapper_items">
+        <div className="twoColWrapper_items" id="kitchen_left1">
           <img src={attachment} style={{width: "100%", marginBottom:"10px", alignSelf:"center"}} alt="Attachment prototype"/>
         </div>
-        <div className="twoColWrapper_items" style={{flex: "0 0 500px"}}>
-          <p>
+        <div className="twoColWrapper_items" id="kitchen_right1" style={{flex: "0 0 500px"}}>
+          <p style={{margin:"10%"}}>
             Various different attachment methods were designed and tested using preliminary prototypes made out of cardboard.
             <br/>Once the attachment mechanism was developed, various other modular mechanisms could be design and prototyped.
           </p>
@@ -85,17 +94,18 @@ function Kitchen(props) {
         </div>
       </div>
       <div className="ColWrapper">
-        <div className="twoColWrapper_items" style={{flex: "0 0 500px"}}>
-          <p>
+        <div className="twoColWrapper_items" id="kitchen_left2" style={{flex: "0 0 500px"}}>
+          <p style={{margin:"10%"}}>
             Simplicity in design of the backboard was key. Thus, a simple hook mechanism based off of kitchen cupboard design standards made the modular holder secure and stable.
           </p>
           <img src={backboard} style={{width: "100%", marginBottom:"10px", alignSelf:"center"}} alt="Backboard Prototype"/>
         </div>
-        <div className="twoColWrapper_items" style={{flex: "0 0 200px"}}>
+        <div className="twoColWrapper_items" id="kitchen_right2" style={{flex: "0 0 200px"}}>
           <img src={backboard_vector} style={{width: "100%", marginBottom:"10px", alignSelf:"center"}} alt="Illustration of Hooked"/>
         </div>
       </div>
-      <Divider color="white"/>
+      <div className="divider"/>
+    <div id="kitchen_refining">
     <h1 className="sectionTitle">Refining the design</h1>
       <p>
         Prototyping helped us identify key limitations in our design early on. Notably aspects such as sliding of the backboard and dust and spills off countertops potentially hitting the items, which was solved by implement rubber feet and designing a splash hood respectively.
@@ -104,9 +114,13 @@ function Kitchen(props) {
         <img src={rubberfeet} style={{width: "28.2%", marginBottom:"10px", alignSelf:"center"}} alt="Rubberfeet added"/>
         <img src={hood} style={{width: "50%", marginBottom:"10px", alignSelf:"center"}} alt="Hood added"/>
       </div>
+    </div>
+      <div className="divider"/>
+    <div id="kitchen_final">
     <h1 className="sectionTitle">Final design</h1>
       <img src={finaldesign1} style={{width: "80%", marginBottom:"10px", alignSelf:"center"}} alt="Final design render 1"/>
       <img src={finaldesign2} style={{width: "80%", marginBottom:"10px", alignSelf:"center"}} alt="Final design render 2"/>
+    </div>
     </div>
   )
 }

@@ -59,13 +59,13 @@ function EngDes(props) {
             <p>ROLE:<br/> {roleMetalpod}</p>
           </div>
         </div>
-        <div style={{marginLeft:"25%",marginRight:"25%", marginTop:"50px", height:"50px", borderTop:"2px solid white", display:"flex"}}></div>
+        <div className="divider"/>
         <div className="vl"></div>
         <h1 className="sectionTitle">Literature Review</h1>
-        <div style={{marginLeft:"25%",marginRight:"25%", marginTop:"50px", height:"50px", borderTop:"2px solid white", display:"flex"}}></div>
+        <div className="divider"/>
         <h1 className="sectionTitle">Concept Sketches</h1>
-        <div style={{marginLeft:"25%",marginRight:"25%", marginTop:"50px", height:"50px", borderTop:"2px solid white", display:"flex"}}></div>
-        <div style={{marginLeft:"25%",marginRight:"25%", marginTop:"50px", height:"50px", borderTop:"2px solid white", display:"flex"}}></div>
+        <div className="divider"/>
+        <div className="divider"/>
         <h1 className="sectionTitle">Design Features</h1>
           <img src={metalpodExploded} style={{width: "85%"}} alt="Exploded Metalpod"/>
         <div className="ColWrapper">
@@ -88,7 +88,7 @@ function EngDes(props) {
           </div>
         </div>
         <img src={deploymentgif} style={{width: "60%", marginBottom:"50px"}} alt="How deployment works"/>
-        <div style={{marginLeft:"25%",marginRight:"25%", marginTop:"50px", height:"50px", borderTop:"2px solid white", display:"flex"}}></div>
+        <div className="divider"/>
         <h1 className="sectionTitle">Testing & Analysis</h1>
           <div className="ColWrapper" style={{marginLeft:"10%", marginRight:"10%", justifyContent:"center"}}>
             <div style={{flex: "1 0 400px"}}>
@@ -127,7 +127,7 @@ function EngDes(props) {
             <p>ROLE:<br/> {roleTorpedo}</p>
           </div>
         </div>
-        <div style={{marginLeft:"25%",marginRight:"25%", marginTop:"50px", height:"50px", borderTop:"2px solid white", display:"flex"}}></div>
+        <div className="divider"/>
         <div className="vl"></div>
         <h1 className="sectionTitle">Design features</h1>
           <img src={torpedo} style={{width: "100%", marginBottom:"0"}} alt="Torpedo Render"/>
@@ -148,7 +148,7 @@ function EngDes(props) {
               </p>
             </div>
           </div>
-          <div style={{marginLeft:"25%",marginRight:"25%", marginTop:"50px", height:"50px", borderTop:"2px solid white", display:"flex"}}></div>
+          <div className="divider"/>
         <h1 className="sectionTitle">Technical Poster</h1>
           <img src={torpedo_poster} style={{width: "60%", marginBottom:"10px"}} alt="Torpedo Technical Poster"/>
       </Tab>
@@ -162,7 +162,7 @@ function EngDes(props) {
             <p>ROLE:<br/> {roleTeargear}</p>
           </div>
         </div>
-        <div style={{marginLeft:"25%",marginRight:"25%", marginTop:"50px", height:"50px", borderTop:"2px solid white", display:"flex"}}></div>
+        <div className="divider"/>
         <div className="vl"></div>
         <h1 className="sectionTitle">Concept Sketches</h1>
           <div className="ColWrapper">
@@ -173,7 +173,7 @@ function EngDes(props) {
               </p>
             </div>
           </div>
-          <div style={{marginLeft:"25%",marginRight:"25%", marginTop:"50px", height:"50px", borderTop:"2px solid white", display:"flex"}}></div>
+          <div className="divider"/>
         <h1 className="sectionTitle">Design Features</h1>
           <img src={teargearRender} style={{width: "60%", marginBottom:"10px"}} alt="Teargear render"/>
           <div className="ColWrapper">
@@ -196,7 +196,7 @@ function EngDes(props) {
               </p>
             </div>
           </div>
-          <div style={{marginLeft:"25%",marginRight:"25%", marginTop:"50px", height:"50px", borderTop:"2px solid white", display:"flex"}}></div>
+          <div className="divider"/>
         <h1 className="sectionTitle">Manufacture & testing</h1>
           <div className="ColWrapper">
             <div style={{flex:"0 0 500px"}}><img src={teargearmade} style={{width: "100%", marginBottom:"10px"}} alt="Teargear under the hood"/></div>

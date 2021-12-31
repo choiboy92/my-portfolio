@@ -101,6 +101,22 @@ function getScrollPercent() {
     return (h[st]||b[st]) / ((h[sh]||b[sh]) - h.clientHeight);
 }
 
+function progress(duration) {
+  let progress = anime.timeline({
+    duration: duration,
+    elasticity: 200,
+    easing: 'linear',
+    autoplay: false
+  });
+
+  progress.add({
+    targets: '.vl',
+    height: ['0%', '80%'],
+  })
+  return progress
+}
+
+
 function apple_anime() {
   var tl = anime.timeline({
     duration: 200,
@@ -117,30 +133,208 @@ function apple_anime() {
   }, 400)
   .add({
     targets: '#apple_mvp',
-    translateY: [200, 0],
+    translateY: [100, 0],
   }, 300)
   .add({
     targets: '#apple_ideation',
-    translateY: [200, 0],
+    translateY: [100, 0],
   }, 200)
   .add({
     targets: '#apple_research',
-    translateY: [200, 0],
+    translateY: [100, 0],
   }, 150)
   .add({
     targets: '#apple_problem',
     opacity: [0, 1],
     translateX: [100, 0],
   }, 0)
+  var vl_progress = progress(400+200)
 
   window.onscroll = () => {
     tl.seek(tl.duration * getScrollPercent());
+    vl_progress.seek(vl_progress.duration * getScrollPercent());
   }
 }
+
+
+
+function jsviewhkl_anime(vl_progress) {
+  var tl = anime.timeline({
+    duration: 100,
+    elasticity: 200,
+    easing: 'easeInOutSine',
+    autoplay: false
+  });
+
+  tl
+  .add({
+    targets: '#jsviewhkl_results',
+    opacity: [0, 1],
+  }, 300)
+  .add({
+    targets: '#jsviewhkl_oldvsnew',
+    translateY: [100, 0],
+  }, 200)
+  .add({
+    targets: '#jsviewhkl_solution',
+    translateY: [100, 0],
+  }, 100)
+  .add({
+    targets: '#jsviewhkl_problem',
+    opacity: [0, 1],
+    translateY: [100, 0],
+  }, 0)
+  var vl_progress = progress(300+100)
+
+  window.onscroll = () => {
+    tl.seek(tl.duration * getScrollPercent());
+    vl_progress.seek(vl_progress.duration * getScrollPercent());
+  }
+}
+
+function presweather_anime(vl_progress) {
+  var tl = anime.timeline({
+    duration: 200,
+    elasticity: 200,
+    easing: 'easeInOutSine',
+    autoplay: false
+  });
+
+  tl
+  .add({
+    targets: '#presweather_impact',
+    opacity: [0, 1],
+  }, 800)
+  .add({
+    targets: '#presweather_training',
+    translateY: [100, 0],
+  }, 600)
+  .add({
+    targets: '#presweather_aws',
+    translateY: [100, 0],
+  }, 300)
+  .add({
+    targets: '#presweather_problem',
+    opacity: [0, 1],
+    translateY: [100, 0],
+  }, 0)
+  var vl_progress = progress(800+100)
+
+  window.onscroll = () => {
+    tl.seek(tl.duration * getScrollPercent());
+    vl_progress.seek(vl_progress.duration * getScrollPercent());
+  }
+}
+
+function kitchen_anime(vl_progress) {
+  var tl = anime.timeline({
+    elasticity: 200,
+    easing: 'easeInOutSine',
+    autoplay: false
+  });
+
+  tl
+  .add({
+    targets: '#kitchen_final',
+    opacity: [0, 1],
+  }, 1500)
+  .add({
+    targets: '#kitchen_refining',
+    translateY: [100, 0],
+    duration:200,
+  }, 1600)
+  .add({
+    targets: '#kitchen_right2',
+    translateX: [100, 0],
+    duration:300,
+  }, 1200)
+  .add({
+    targets: '#kitchen_left2',
+    translateX: [-100, 0],
+    duration:300,
+  }, 1150)
+  .add({
+    targets: '#kitchen_right1',
+    translateX: [100, 0],
+    duration:200,
+  }, 1100)
+  .add({
+    targets: '#kitchen_left1',
+    translateX: [-100, 0],
+    duration:200,
+  }, 1050)
+  .add({
+    targets: '#kitchen_ideation',
+    translateY: [100, 0],
+    duration:150,
+  }, 800)
+  .add({
+    targets: '#kitchen_research',
+    translateY: [100, 0],
+    duration:500,
+  }, 400)
+  .add({
+    targets: '#kitchen_problem',
+    opacity: [0, 1],
+    translateY: [100, 0],
+    duration:300,
+  }, 0)
+  var vl_progress = progress(1500+200)
+
+  window.onscroll = () => {
+    tl.seek(tl.duration * getScrollPercent());
+    vl_progress.seek(vl_progress.duration * getScrollPercent());
+  }
+}
+
+function neutoy_anime(vl_progress) {
+  var tl = anime.timeline({
+    duration: 200,
+    elasticity: 200,
+    easing: 'easeInOutSine',
+    autoplay: false
+  });
+
+  tl
+  .add({
+    targets: '#neutoy_pivot',
+    opacity: [0, 1],
+    duration:200,
+  }, 900)
+  .add({
+    targets: '#neutoy_mvp',
+    translateY: [100, 0],
+    duration:200,
+  }, 400)
+  .add({
+    targets: '#neutoy_research',
+    translateY: [100, 0],
+    duration:200,
+  }, 250)
+  .add({
+    targets: '#neutoy_refining',
+    translateY: [100, 0],
+    duration:200,
+  }, 100)
+  .add({
+    targets: '#neutoy_problem',
+    opacity: [0, 1],
+    translateY: [100, 0],
+    duration:100,
+  }, 0)
+  var vl_progress = progress(300+100)
+
+  window.onscroll = () => {
+    tl.seek(tl.duration * getScrollPercent());
+    vl_progress.seek(vl_progress.duration * getScrollPercent());
+  }
+}
+
+
 /*window.onscroll = () => {
   tl.seek(tl.duration * getScrollPercent());
 }*/
 
-window.onload = () => {
+/*window.onload = () => {
     init();
-};
+};*/

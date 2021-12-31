@@ -1,7 +1,6 @@
-import React from "react";
+import React, {useEffect} from "react";
 import ProjectIntro from "./ProjectPage_intro.js";
 import './projects.css'
-import Divider from './hooks/divider.js';
 import SideQuickNav from './hooks/sideQuickNav.js';
 
 import graph1 from '../Assets/neutoy/reliefmethod.png';
@@ -16,6 +15,10 @@ const description = "Lead a team of engineers, designers and personal trainers i
 const role = "Product Manager"
 
 function Neutoy(props) {
+  useEffect(() => {
+    window.neutoy_anime();
+  }, []);
+
   return (
     <div className="ProjectPage">
     <ProjectIntro
@@ -29,28 +32,31 @@ function Neutoy(props) {
     <SideQuickNav/>
     <div className="introDescWrapper">
       <div style={{flex:"2 0 150px", border:"1px solid white"}}>
-        <p>DESCRIPTION:<br/>
+        <p><br/>DESCRIPTION:<br/>
          {description}</p>
       </div>
       <div style={{flex:"1 0 100px", border:"1px solid white"}}>
-        <p>ROLE:<br/> {role}</p>
+        <p><br/>ROLE:<br/>{role}</p>
       </div>
     </div>
-    <Divider color="white"/>
+    <div className="divider"/>
     <div className="vl"></div>
-    <div className="ColWrapper">
+    <div className="ColWrapper" id="neutoy_problem">
       <div style={{flex:"0 0 300px", display:"flex", alignItems:"center"}}><h1 className="sectionTitle">The Problem</h1></div>
       <p style={{flex:"0 0 500px", marginLeft:"10%",marginRight:"10%"}}>
         Health and fitness tools have often required large or expensive systems to be purchased. Even with the use of wearables or trackers they exhibit poor adoption and continued usage. We wanted to explore ways to bring health solutions to users right to them.
       </p>
     </div>
-    <Divider color="white"/>
+      <div className="divider"/>
+    <div id="neutoy_refining">
     <h1 className="sectionTitle">Refining our problem</h1>
       <p>
         The issues and limitations of health technology is a broad and vast issue with many research papers and literature reviews about it. The large scope of the issue meant that, as a team, it was important to refine what problem we were looking to solve.
         <br/>We decided that we would look at building healthy habits, in particular honing in on the average office worker market; a particular subset that typically has little time and higher stress.
       </p>
-      <Divider color="white"/>
+    </div>
+      <div className="divider"/>
+    <div id="neutoy_research">
     <h1 className="sectionTitle">Market Research</h1>
       <p>
         We conducted surveys and interviews with various age-ranges of office workers to find out their current exercise trends. Our research showed that most ages do not seek professional exercise services, other than those over 50, and that in most age ranges, a considerable amount of exercise carried out is simple stretching.
@@ -73,16 +79,20 @@ function Neutoy(props) {
           <li>feels current methods are ineffective</li>
         </ol>
       </p>
-      <Divider color="white"/>
+    </div>
+      <div className="divider"/>
+    <div id="neutoy_mvp">
     <h1 className="sectionTitle">MVP</h1>
       <p>
         I became involved in the project at a time where the technologies that were to be used were somewhat decided. In order to make the uptake as easy as possible we wanted to use a platform which many were familiar with; the website.
         <br/>Working with exercise professionals meant we were able to shortlist a few exercises that focus on hand, wrist and neck pains. A key unique selling point of our project was to incorporate open-source computer vision techniques allowed us to ideate and consequently develop some interaction into the website with the aim of making these simple exercises intuitive and fun.
       </p>
-      <video src={lightbulb} autoplay="true" loop="true" width="80%" volume="0.2" style={{alignSelf:"center", marginBottom:"10px"}}/>
-      <video src={papercrush} autoplay="true" loop="true" width="80%" volume="0.2" style={{alignSelf:"center", marginBottom:"10px"}}/>
-      <video src={tissue} autoplay="true" loop="true" width="80%" volume="0.2" style={{alignSelf:"center", marginBottom:"10px"}}/>
-      <Divider color="white"/>
+      <video autoplay loop muted playsinline width="80%"  style={{alignSelf:"center", marginBottom:"10px"}}><source src={lightbulb}/></video>
+      <video autoplay loop muted playsinline width="80%"  style={{alignSelf:"center", marginBottom:"10px"}}><source src={papercrush}/></video>
+      <video autoplay loop muted playsinline width="80%"  style={{alignSelf:"center", marginBottom:"10px"}}><source src={tissue}/></video>
+    </div>
+      <div className="divider"/>
+    <div id="neutoy_pivot">
     <h1 className="sectionTitle">Pivot</h1>
       <p>
         Upon preliminary user testing, an overwhelming amount of feedback could be summarised in the following:
@@ -97,6 +107,7 @@ function Neutoy(props) {
           <img src={pivot2} style={{width: "100%", marginBottom:"10px", alignSelf:"center"}} alt="Frequency vs Effectiveness graph"/>
         </div>
       </div>
+    </div>
     </div>
   )
 }

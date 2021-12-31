@@ -1,7 +1,6 @@
 import React, {useEffect} from "react";
 import ProjectIntro from "./ProjectPage_intro.js";
 import './projects.css';
-import Divider from './hooks/divider.js';
 import SideQuickNav from './hooks/sideQuickNav.js';
 
 import arch from '../Assets/apple_architecture.png';
@@ -27,14 +26,14 @@ function Apple(props) {
     <SideQuickNav/>
     <div className="introDescWrapper">
       <div style={{flex:"2 0 150px", border:"1px solid white"}}>
-        <p>DESCRIPTION:<br/>
+        <p><br/>DESCRIPTION:<br/>
          {description}</p>
       </div>
       <div style={{flex:"1 0 100px", border:"1px solid white"}}>
-        <p>ROLE:<br/> {role}</p>
+        <p><br/>ROLE:<br/>{role}</p>
       </div>
     </div>
-    <Divider color="white"/>
+    <div className="divider"/>
     <div className="vl"></div>
     <div className="ColWrapper" style={{alignItems:"center"}} id="apple_problem">
       <h1 className="sectionTitle">The Problem</h1>
@@ -43,7 +42,7 @@ function Apple(props) {
         <br/>Counterfeit products also pose a safety risk when considering products like chargers, and consequently the experience that users have with the products they should love.
       </p>
     </div>
-    <Divider color="white"/>
+    <div className="divider"/>
     <div id="apple_research">
     <h1 className="sectionTitle">Research</h1>
       <div className="ColWrapper">
@@ -62,7 +61,7 @@ function Apple(props) {
       </p>
       </div>
     </div>
-      <Divider color="white"/>
+      <div className="divider"/>
     <div id="apple_ideation">
     <h1 className="sectionTitle">Ideation</h1>
       <p>
@@ -71,7 +70,7 @@ function Apple(props) {
         <br/>
         <blockquote style={{textAlign:"center"}}>Faster, easier, scalable, secure, integrated, automated</blockquote>
       </p>
-      <Divider color="white"/>
+      <div className="divider"/>
     </div>
     <div id="apple_mvp">
     <h1 className="sectionTitle">MVP Development</h1>
@@ -81,7 +80,7 @@ function Apple(props) {
         <br/>Having tested the technicalities of the system, work was done to ensure that the application met internal design and accessibility standards.
       </p>
     </div>
-      <Divider color="white"/>
+      <div className="divider"/>
     <div id="apple_outcome">
     <h1 className="sectionTitle">Outcome</h1>
       <p>
