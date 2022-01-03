@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 import ProjectIntro from "./ProjectPage_intro.js";
 import './projects.css';
 import SideQuickNav from './hooks/sideQuickNav.js';
@@ -33,6 +33,10 @@ const roleTorpedo = "Project Manager"
 const roleTeargear = "CAD Manager"
 
 function EngDes(props) {
+  useEffect(() => {
+    window.engdes_anime();
+  }, []);
+
   return (
     <div className="ProjectPage">
     <ProjectIntro
@@ -52,11 +56,11 @@ function EngDes(props) {
       <Tab eventKey="metalpod" title="SATELLITE DEPLOYER" className="tabs">
         <div className="introDescWrapper">
           <div style={{flex:"2 0 150px", border:"1px solid white"}}>
-            <p>DESCRIPTION:<br/>
+            <p><br/>DESCRIPTION:<br/>
              {descriptionMetalpod}</p>
           </div>
           <div style={{flex:"1 0 100px", border:"1px solid white"}}>
-            <p>ROLE:<br/> {roleMetalpod}</p>
+            <p><br/>ROLE:<br/>{roleMetalpod}</p>
           </div>
         </div>
         <div className="divider"/>
@@ -65,23 +69,22 @@ function EngDes(props) {
         <div className="divider"/>
         <h1 className="sectionTitle">Concept Sketches</h1>
         <div className="divider"/>
-        <div className="divider"/>
         <h1 className="sectionTitle">Design Features</h1>
           <img src={metalpodExploded} style={{width: "85%"}} alt="Exploded Metalpod"/>
-        <div className="ColWrapper">
+        <div className="ColWrapper" style={{alignItems: "flex-start"}}>
           <div className="threeColWrapper_items">
-            <p>PROTECTION BY DAMPING
+            <br/><p>PROTECTION BY DAMPING<br/>
             <img src={sdof} style={{width: "100%", marginBottom:"10px"}} alt="SDOF model"/>
-            Simple SDOF models were used to select Neoprene rubber sheets to dampen predicted launch vibrations and forces</p>
+              <br/>Simple SDOF models were used to select Neoprene rubber sheets to dampen predicted launch vibrations and forces</p>
           </div>
           <div className="threeColWrapper_items">
-            <p>SECURE INTERFACE WITH SATELLITE
+            <br/><p>SECURE INTERFACE WITH SATELLITE<br/>
             <img src={railings} style={{width: "100%", marginBottom:"10px"}} alt="Railings design"/>
               <br/>Implementing the protective damping would be of little use if the satellite was not secured and fixed within the deployment system. PTFE coated railings
             </p>
           </div>
           <div className="threeColWrapper_items">
-            <p>SIMPLE DEPLOYMENT MECHANISM
+            <br/><p>SIMPLE DEPLOYMENT MECHANISM<br/>
             <img src={burnwireSketch} style={{width: "100%", marginBottom:"10px"}} alt="Sketch of Burnwire"/>
               <br/>Implementing the protective damping would be of little use if the satellite was not secured and fixed within the deployment system. PTFE coated railings
             </p>
@@ -93,13 +96,13 @@ function EngDes(props) {
           <div className="ColWrapper" style={{marginLeft:"10%", marginRight:"10%", justifyContent:"center"}}>
             <div style={{flex: "1 0 400px"}}>
               <img src={burnwire} style={{width: "60%", marginBottom:"10px"}} alt="Burnwire in test configuration"/>
-                <p style={{textAlign:"left"}}>BURNWIRE TEST</p>
+                <p>BURNWIRE TEST</p>
                 <p><br/>The burnwire mechanism was also tested to evaluate the real required voltages to achieve a cutting time below 10s.
               </p>
             </div>
             <div style={{flex: "1 0 400px"}}>
               <img src={sepvelsetup} style={{width: "60%", marginBottom:"10px"}} alt="SepVel test setup"/>
-                <p style={{textAlign:"left"}}>SEPARATION VELOCITY</p>
+                <p>SEPARATION VELOCITY</p>
                 <p><br/>A simple pulley test was devised as a way to
               </p>
             </div>
@@ -120,93 +123,99 @@ function EngDes(props) {
       <Tab eventKey="torpedo" title="UNDERWATER SCOOTER" className="tabs">
         <div className="introDescWrapper">
           <div style={{flex:"2 0 150px", border:"1px solid white"}}>
-            <p>DESCRIPTION:<br/>
-             {descriptionTorpedo}</p>
+            <p><br/>DESCRIPTION:<br/>{descriptionTorpedo}</p>
           </div>
           <div style={{flex:"1 0 100px", border:"1px solid white"}}>
-            <p>ROLE:<br/> {roleTorpedo}</p>
+            <p><br/>ROLE:<br/>{roleTorpedo}</p>
           </div>
         </div>
         <div className="divider"/>
         <div className="vl"></div>
+        <div id="engdes_torpedo_featimg">
         <h1 className="sectionTitle">Design features</h1>
           <img src={torpedo} style={{width: "100%", marginBottom:"0"}} alt="Torpedo Render"/>
+          </div>
           <div className="ColWrapper" style={{marginTop:"0"}}>
-            <div className="threeColWrapper_items">
-              <p>USER ORIENTATED DESIGN<br/>
+            <div className="threeColWrapper_items" id="engdes_torpedo_feat1">
+              <p><br/>USER ORIENTATED DESIGN<br/>
                 Neutral buoyancy for divers and can secure extra weights for deep diving. Dead man's switch also adds an extra layer of safety to the device.
               </p>
             </div>
-            <div className="threeColWrapper_items">
-              <p>SIMPLE MANUFACTURING<br/>
+            <div className="threeColWrapper_items" id="engdes_torpedo_feat2">
+              <p><br/>SIMPLE MANUFACTURING<br/>
                 Injection moulded design using Epoxy SMC and simple waterproofing features makes it simple to make and assemble.
               </p>
             </div>
-            <div className="threeColWrapper_items">
-              <p>EFFECTIVE ACTUATION<br/>
+            <div className="threeColWrapper_items" id="engdes_torpedo_feat3">
+              <p><br/>EFFECTIVE ACTUATION<br/>
                 Motor selection considers both the required propulsion speed of 1.5m/s while also offering up to 2 hours of continued usage.
               </p>
             </div>
           </div>
           <div className="divider"/>
+        <div id="engdes_torpedo_poster">
         <h1 className="sectionTitle">Technical Poster</h1>
           <img src={torpedo_poster} style={{width: "60%", marginBottom:"10px"}} alt="Torpedo Technical Poster"/>
+        </div>
       </Tab>
       <Tab eventKey="teargear" title="MINI ELECTRIC DRAG RACER" className="tabs">
         <div className="introDescWrapper">
           <div style={{flex:"2 0 150px", border:"1px solid white"}}>
-            <p>DESCRIPTION:<br/>
-             {descriptionTeargear}</p>
+            <p><br/>DESCRIPTION:<br/>{descriptionTeargear}</p>
           </div>
           <div style={{flex:"1 0 100px", border:"1px solid white"}}>
-            <p>ROLE:<br/> {roleTeargear}</p>
+            <p><br/>ROLE:<br/>{roleTeargear}</p>
           </div>
         </div>
         <div className="divider"/>
         <div className="vl"></div>
+        <div id="engdes_teargear_concept">
         <h1 className="sectionTitle">Concept Sketches</h1>
-          <div className="ColWrapper">
+          <div className="ColWrapper" style={{alignItems:"center"}}>
             <div style={{flex: "0 0 400px"}}><img src={teargearConcept} style={{width: "100%", marginBottom:"10px"}} alt="Teargear Concept Sketch"/></div>
             <div style={{flex: "0 0 400px"}}>
-              <p>
+              <p style={{margin:"0"}}>
                 Concept ideation was carried out taking into account restrictions in size and part usage. However, we looked to explore our creativity in designing a unique and effective solution.
               </p>
             </div>
           </div>
+        </div>
           <div className="divider"/>
         <h1 className="sectionTitle">Design Features</h1>
-          <img src={teargearRender} style={{width: "60%", marginBottom:"10px"}} alt="Teargear render"/>
-          <div className="ColWrapper">
-            <div className="threeColWrapper_items">
-              <p>OUT-OF-THE-BOX THINKING<br/>
+          <img src={teargearRender} style={{width: "60%", marginBottom:"10px"}} alt="Teargear render" id="engdes_teargear_img"/>
+          <div className="ColWrapper" style={{alignItems:"flex-start"}}>
+            <div className="threeColWrapper_items" id="engdes_teargear_feat1">
+              <br/><p>OUT-OF-THE-BOX THINKING<br/>
                 <img src={rollerball} style={{width: "100%", marginBottom:"10px"}} alt="Transfer Ball bearing diagram"/>
                 <br/>Used a roller ball bearing instead of axle and remaining wheels to reduce mass and improve top speed.
               </p>
             </div>
-            <div className="threeColWrapper_items">
-              <p>OPTIMISED ACTUATION<br/>
+            <div className="threeColWrapper_items" id="engdes_teargear_feat2">
+              <br/><p>OPTIMISED ACTUATION<br/>
                 <img src={gearcalcs} style={{width: "100%", marginBottom:"10px"}} alt="Fixed Transmission gear ratio calculations"/>
                 <br/>Initial estimates gave us an approximate mass with which we calculated optimal gear ratios based on efficiency and output speed.
               </p>
             </div>
-            <div className="threeColWrapper_items">
-              <p>FAST ACCELERATION<br/>
+            <div className="threeColWrapper_items" id="engdes_teargear_feat3">
+              <br/><p>FAST ACCELERATION<br/>
                 <img src={weightdist} style={{width: "100%", marginBottom:"10px"}} alt="Weight Distribution diagram"/>
                 <br/>By designing the car to have roughly 72% weight distribution towards the drive shaft, we could improve acceleration to reach our top speed quicker
               </p>
             </div>
           </div>
           <div className="divider"/>
+        <div id="engdes_teargear_manutest">
         <h1 className="sectionTitle">Manufacture & testing</h1>
           <div className="ColWrapper">
             <div style={{flex:"0 0 500px"}}><img src={teargearmade} style={{width: "100%", marginBottom:"10px"}} alt="Teargear under the hood"/></div>
-            <div style={{flex:"0 0 300px"}}>
-              <img src={teargeartest} style={{width: "70%", marginBottom:"10px"}} alt="Racing Teargear"/>
-              <p>
+            <div style={{flex:"0 0 250px"}}>
+              <img src={teargeartest} style={{width: "100%", marginBottom:"10px"}} alt="Racing Teargear"/>
+              <p style={{margin:0}}>
                 Our tested top speed was 2.21m/s and when compared to other vehicles showed exceptional disparity.
               </p>
             </div>
           </div>
+        </div>
       </Tab>
     </Tabs>
 

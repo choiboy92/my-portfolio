@@ -158,7 +158,7 @@ function apple_anime() {
 
 
 
-function jsviewhkl_anime(vl_progress) {
+function jsviewhkl_anime() {
   var tl = anime.timeline({
     duration: 100,
     elasticity: 200,
@@ -192,7 +192,7 @@ function jsviewhkl_anime(vl_progress) {
   }
 }
 
-function presweather_anime(vl_progress) {
+function presweather_anime() {
   var tl = anime.timeline({
     duration: 200,
     elasticity: 200,
@@ -226,7 +226,7 @@ function presweather_anime(vl_progress) {
   }
 }
 
-function kitchen_anime(vl_progress) {
+function kitchen_anime() {
   var tl = anime.timeline({
     elasticity: 200,
     easing: 'easeInOutSine',
@@ -287,7 +287,7 @@ function kitchen_anime(vl_progress) {
   }
 }
 
-function neutoy_anime(vl_progress) {
+function neutoy_anime() {
   var tl = anime.timeline({
     duration: 200,
     elasticity: 200,
@@ -329,6 +329,108 @@ function neutoy_anime(vl_progress) {
     vl_progress.seek(vl_progress.duration * getScrollPercent());
   }
 }
+
+function engdes_anime() {
+  var vl_progress = progress(300+100)
+  var tl_teargear = engdes_teargear_anime()
+  var tl_torpedo = engdes_torpedo_anime()
+  window.onscroll = () => {
+    tl_torpedo.seek(tl_torpedo.duration * getScrollPercent());
+    tl_teargear.seek(tl_teargear.duration * getScrollPercent());
+    vl_progress.seek(vl_progress.duration * getScrollPercent());
+  }
+}
+
+function engdes_teargear_anime() {
+  var tl = anime.timeline({
+    duration: 200,
+    elasticity: 200,
+    easing: 'easeInOutSine',
+    autoplay: false
+  });
+
+  tl
+  .add({
+    targets: '#engdes_teargear_manutest',
+    translateY: [100, 0],
+    opacity: [0, 1],
+    duration:200,
+  }, 500)
+  .add({
+    targets: '#engdes_teargear_feat3',
+    translateY: [80, 0],
+    opacity: [0, 1],
+    duration:200,
+  }, 400)
+  .add({
+    targets: '#engdes_teargear_feat2',
+    translateY: [100, 0],
+    opacity: [0, 1],
+    duration:200,
+  }, 400)
+  .add({
+    targets: '#engdes_teargear_feat1',
+    translateY: [150, 0],
+    opacity: [0, 1],
+    duration:200,
+  }, 400)
+  .add({
+    targets: '#engdes_teargear_img',
+    translateY: [100, 0],
+    duration:200,
+  }, 200)
+  .add({
+    targets: '#engdes_teargear_concept',
+    opacity: [0, 1],
+    translateY: [100, 0],
+    duration:200,
+  }, 0)
+  return tl
+}
+
+function engdes_torpedo_anime() {
+  var tl = anime.timeline({
+    duration: 200,
+    elasticity: 200,
+    easing: 'easeInOutSine',
+    autoplay: false
+  });
+
+  tl
+  .add({
+    targets: '#engdes_torpedo_poster',
+    translateY: [80, 0],
+    opacity: [0, 1],
+    duration:200,
+  }, 400)
+  .add({
+    targets: '#engdes_torpedo_feat3',
+    translateY: [80, 0],
+    opacity: [0, 1],
+    duration:200,
+  }, 330)
+  .add({
+    targets: '#engdes_torpedo_feat2',
+    translateY: [80, 0],
+    opacity: [0, 1],
+    duration:200,
+  }, 290)
+  .add({
+    targets: '#engdes_torpedo_feat1',
+    translateY: [80, 0],
+    opacity: [0, 1],
+    duration:200,
+  }, 250)
+  .add({
+    targets: '#engdes_torpedo_featimg',
+    opacity: [0, 1],
+    translateY: [100, 0],
+    duration:300,
+  }, 0)
+  return tl
+}
+
+
 
 
 /*window.onscroll = () => {
