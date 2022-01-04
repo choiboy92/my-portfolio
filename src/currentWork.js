@@ -10,6 +10,7 @@ function CurrentWorkPage() {
     <div id="currentworkPage">
       <div className="currentwork_card">
         <h1 className="currentwork_card_header">Parallax Errors in Knee Surgery</h1>
+        <p className="currentwork_card_category">ENGINEERING DESIGN</p>
         <div className="currentwork_card_innerdiv">
           <video className="currentwork_card_asset" src={kneevid} autoplay="true" loop="true" alt="Talbot 2015 Parallax Error video"/>
           <p className="currentwork_card_desc">
@@ -26,8 +27,10 @@ function CurrentWorkPage() {
           </p>
         </div>
       </div>
+      <div className="divider"/>
       <div className="currentwork_card">
         <h1 className="currentwork_card_header">Gestures for the Blind & Visually Impaired</h1>
+        <p className="currentwork_card_category">ACCESSIBILITY</p>
         <div className="currentwork_card_innerdiv">
           <img className="currentwork_card_asset" src={blind} alt="By Ryoji Iwata from Unsplash"/>
           <p className="currentwork_card_desc">
@@ -37,8 +40,10 @@ function CurrentWorkPage() {
           </p>
         </div>
       </div>
+      <div className="divider"/>
       <div className="currentwork_card">
-        <h1 className="currentwork_card_header">Reusable Film: making film photography sustainable</h1>
+        <h1 className="currentwork_card_header">Smart Film: making film photography sustainable</h1>
+        <p className="currentwork_card_category">ENGINEERING DESIGN</p>
         <div className="currentwork_card_innerdiv">
           <img className="currentwork_card_asset" src={filmcamera} alt="By helloimnik from Unsplash" style={{height:"360px"}}/>
           <p className="currentwork_card_desc">
@@ -50,8 +55,10 @@ function CurrentWorkPage() {
           </p>
         </div>
       </div>
+      <div className="divider"/>
       <div className="currentwork_card">
         <h1 className="currentwork_card_header">Mechanical Keyboards: an endless spiral</h1>
+        <p className="currentwork_card_category">HOBBIES</p>
         <div className="currentwork_card_innerdiv">
           <img className="currentwork_card_asset" src={mechkey} alt="Taken by me"/>
           <p className="currentwork_card_desc">
