@@ -5,6 +5,7 @@ import SideQuickNav from './hooks/sideQuickNav.js';
 import Tabs from 'react-bootstrap/Tabs';
 import Tab from 'react-bootstrap/Tab';
 
+import metalpod_concepts from '../Assets/engdes/metalpod_concepts.png';
 import metalpodExploded from '../Assets/engdes/metalpod_exploded.png';
 import sdof from '../Assets/engdes/SDOF_model_sketch.jpg';
 import railings from '../Assets/engdes/railings.jpg';
@@ -14,6 +15,7 @@ import burnwire from '../Assets/engdes/burnwire.jpg';
 import sepvelsetup from '../Assets/engdes/SepVel_testing_setup.jpg';
 import vibration from '../Assets/engdes/metalpod_vibration.png';
 import shakertable from '../Assets/engdes/shakertable.jpg';
+import dmt_team from '../Assets/engdes/dmt_team.jpg';
 import torpedo from '../Assets/engdes/ME2_DesignWeek_render2.jpg';
 import torpedo_poster from '../Assets/engdes/torpedo_poster.png';
 import teargearConcept from '../Assets/engdes/teargear_concept.png';
@@ -24,7 +26,7 @@ import weightdist from '../Assets/engdes/teargear_weightdist.png';
 import teargearmade from '../Assets/engdes/teargear_made.png';
 import teargeartest from '../Assets/engdes/teargear_test.png';
 
-const descriptionMetalpod = "Design, make and test a CubeSat deployment system. The system should interface with the rocket and protect the satellite during launch and then be able to quickly and effectively deploy a 3U CubeSat (manufactured by other teams).";
+const descriptionMetalpod = "Design, make and test a CubeSat deployment system. The system should interface with the Falcon 9 rocket, protect the satellite during launch, then be able to quickly and effectively deploy a 3U CubeSat (manufactured by other teams).";
 const descriptionTorpedo = "As a team, design an electric powered underwater scooter, capable of depths of 40m and an underwater velocity of 1.5m/s all within a working week.";
 const descriptionTeargear = "Design and manufacture a mini electric drag race car to be raced with other teams. The motor, battery and wheels cannot be altered.";
 
@@ -65,9 +67,29 @@ function EngDes(props) {
         </div>
         <div className="divider"/>
         <div className="vl"></div>
-        <h1 className="sectionTitle">Literature Review</h1>
+        <h1 className="sectionTitle">Research & Review</h1>
+          <p>
+            When given a design project, experience has helped me learn that although it is easy to
+            run into the design process headfirst, this almost always elongates the design period
+            and leads to more time spent redesigning afterwards.<br/>
+            Part of this process includes reinstating and distilling down the project objectives; an often
+            overlooked yet essential part of the project, especially for the team as whole to be on the
+            same page:<br/>
+            <ol style={{marginLeft:"10%", listStyleType:"none"}}>
+              <li>  🛡      PROTECTION</li>
+              <li>  🚀      DEPLOYMENT</li>
+              <li>  🧱      INTERFACE</li>
+            </ol>
+            I delegated research on these three objectives between the team members, exploring existing solutions,
+            research and documentation so we could approach the initial design phase as informed as possible.
+          </p>
         <div className="divider"/>
         <h1 className="sectionTitle">Concept Sketches</h1>
+          <p>
+            Leading on from our research, the team and I looked to develop some concept sketches exploring various actuation methods,
+            deployment methods, shapes & forms, damping methods.
+          </p>
+          <img src={metalpod_concepts} style={{width: "100%", marginBottom:"10px"}} alt="Metalpod Concept sketches"/>
         <div className="divider"/>
         <h1 className="sectionTitle">Design Features</h1>
           <img src={metalpodExploded} style={{width: "85%"}} alt="Exploded Metalpod"/>
@@ -75,7 +97,10 @@ function EngDes(props) {
           <div className="threeColWrapper_items">
             <br/><p>PROTECTION BY DAMPING<br/>
             <img src={sdof} style={{width: "100%", marginBottom:"10px"}} alt="SDOF model"/>
-              <br/>Simple SDOF models were used to select Neoprene rubber sheets to dampen predicted launch vibrations and forces</p>
+              <br/>Simple SDOF models were used to select Neoprene rubber sheets to dampen predicted launch vibrations and forces.
+                These models were then used to estimate the damping our deployment system would provide. Frequency analysis could be
+                carried out to verify that the Neoprene sheets would be effective.
+              </p>
           </div>
           <div className="threeColWrapper_items">
             <br/><p>SECURE INTERFACE WITH SATELLITE<br/>
@@ -103,7 +128,10 @@ function EngDes(props) {
             <div style={{flex: "1 0 400px"}}>
               <img src={sepvelsetup} style={{width: "60%", marginBottom:"10px"}} alt="SepVel test setup"/>
                 <p>SEPARATION VELOCITY</p>
-                <p><br/>A simple pulley test was devised as a way to
+                <p><br/>
+                  A simple pulley test was devised as a way to simulate the low gravity environment that the system
+                  would experience during the deployment phase. Thus, the real separation velocity could be estiamted in
+                  a simple manner while any interference with the railings could also be caught.
               </p>
             </div>
           </div>
@@ -119,6 +147,40 @@ function EngDes(props) {
               <img src={shakertable} style={{width: "100%", marginBottom:"10px"}} alt="Vibration test setup"/>
             </div>
           </div>
+          <div className="divider"/>
+          <h1 className="sectionTitle">Challenges of virtual working</h1>
+            <p>
+              The pandemic that plagued most of 2020 and 2021 meant that all project proceedings had to be carried out online.
+              This posed some major challenges, some of which were as simple as sharing unrotated images to more complicated ones.
+              Here are some of the major challenges that we faced and learned from.
+            </p>
+            <div className="ColWrapper" style={{alignItems:"center", justifyContent:"center"}}>
+              <img src={dmt_team} style={{width:"400px",flex:"1 0 auto", marginBottom:"10px"}} alt="Online team meetings"/>
+              <p style={{flex:"1 0 300px", marginLeft:"10%", marginRight:"10%"}}>
+
+                <br/>
+                MEETINGS & ORGANISATION<br/>
+                Conversations and discussions that could be held in a moment or at the end of a lecture were no longer possible.
+                The virtual conditions meant greater emphasis on meeting preparation, agendas as well as flexibility to converse via chat so as not to waste time.
+                When communicating with other subteams working on other systems, this was vital.
+                <br/>
+                VIRTUAL CAD<br/>
+                A key aspect of projects is using CAD, both for actual design as well as helping members visualise solutions.
+                File naming, organisation and version management became as important as ever. Limitations in access to CAD on home computers
+                meant that we also had to be flexible and sensible when delegating CAD tasks.
+                <br/>
+                MANUFACTURING<br/>
+                In order to have our design manufactured, we now needed to work with 3rd party prototype vendors. Typically we would build these ourselves in the workshop but due to
+                this change we needed to focus on making our engineering drawings had to be of industry standard and familiarising ourself with billing methods.
+                Moreover, the higher manufacturing costs meant a greater focus on cost-reduction in our design.
+                <br/>
+                THE LOSS OF SIGHT & TOUCH<br/>
+                Having gone virtual, we realised how much of an advantage it was to be able to simply look and feel a design or prototype. Often during this time,
+                we could notice things to change but without this reference, we needed to ensure that our design was close to perfect from the get-go and that we had
+                considered all the design and manufacturing requirements; much like what would be expected in industry.
+              </p>
+            </div>
+
       </Tab>
       <Tab eventKey="torpedo" title="UNDERWATER SCOOTER" className="tabs">
         <div className="introDescWrapper">

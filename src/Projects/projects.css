@@ -55,7 +55,6 @@ p.sideQuickNav:hover{
 .ColWrapper {
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
   margin-top: 10px;
   margin-bottom: 10px;
   margin-left: 10%;
@@ -108,4 +107,9 @@ h1.sectionTitle {
   height:50px;
   border-top:2px solid white;
   display:flex;
+}
+
+li {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
