@@ -8,6 +8,7 @@ import Tab from 'react-bootstrap/Tab';
 import metalpod_concepts from '../Assets/engdes/metalpod_concepts.png';
 import metalpodExploded from '../Assets/engdes/metalpod_exploded.png';
 import sdof from '../Assets/engdes/SDOF_model_sketch.jpg';
+import sdof_gevs from '../Assets/engdes/SDOF_model_GEVS.png';
 import railings from '../Assets/engdes/railings.jpg';
 import burnwireSketch from '../Assets/engdes/burnwire.gif';
 import deploymentgif from '../Assets/engdes/deployment.gif';
@@ -95,23 +96,29 @@ function EngDes(props) {
           <img src={metalpodExploded} style={{width: "85%"}} alt="Exploded Metalpod"/>
         <div className="ColWrapper" style={{alignItems: "flex-start"}}>
           <div className="threeColWrapper_items">
-            <br/><p>PROTECTION BY DAMPING<br/>
+            <br/><p>PROTECTION BY DAMPING<br/></p>
             <img src={sdof} style={{width: "100%", marginBottom:"10px"}} alt="SDOF model"/>
-              <br/>Simple SDOF models were used to select Neoprene rubber sheets to dampen predicted launch vibrations and forces.
-                These models were then used to estimate the damping our deployment system would provide. Frequency analysis could be
-                carried out to verify that the Neoprene sheets would be effective.
+              <p><br/>Simple SDOF models were used to evaluate the vibration transfer from the rocket, throught the deployment system to the satellite.
+                By selecting Neoprene rubber (NBR) sheets to dampen launch vibrations and forces, the natural frequencies were reduced to roughly 25 to 30Hz with significant attenuation beyond that.
+                </p><img src={sdof_gevs} style={{width: "100%", marginBottom:"10px", marginTop:"10px"}} alt="SDOF model GEVS prediction"/>
+                <p>These models were used to verify that the Neoprene sheets would be effective and predict vibration response for a set of GEVS random vibration profiles.
               </p>
           </div>
           <div className="threeColWrapper_items">
-            <br/><p>SECURE INTERFACE WITH SATELLITE<br/>
+            <br/><p>SECURE INTERFACE WITH SATELLITE<br/></p>
             <img src={railings} style={{width: "100%", marginBottom:"10px"}} alt="Railings design"/>
-              <br/>Implementing the protective damping would be of little use if the satellite was not secured and fixed within the deployment system. PTFE coated railings
+              <p><br/>Implementing the protective damping would be of little use if the satellite was not secured and fixed within the deployment system.
+                PTFE coated railings provide the constrainment as well as the smooth interface allowing the satellite to slide out and acting as a barrier to protect against cold-welding.
             </p>
           </div>
           <div className="threeColWrapper_items">
-            <br/><p>SIMPLE DEPLOYMENT MECHANISM<br/>
+            <br/><p>SIMPLE DEPLOYMENT MECHANISM<br/></p>
             <img src={burnwireSketch} style={{width: "100%", marginBottom:"10px"}} alt="Sketch of Burnwire"/>
-              <br/>Implementing the protective damping would be of little use if the satellite was not secured and fixed within the deployment system. PTFE coated railings
+              <p><br/>
+                Burn-wire device was designed as a simple and reliable way for releasing spring-loaded actuation.
+                Its ability to actuate in zero-gravity, non-atmospheric conditions along with the option for contingency burn-wires and their relatively cheap cost,
+                makes it an ideal, reliable way for deployer actuation.<br/>
+                Consisting of a ceramic holder and shoulder screws, the Nichrome cutting wire was calculated to cut the Vectran cable with between 1 to 2A of current.
             </p>
           </div>
         </div>
