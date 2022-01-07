@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/my-portfolio/static/css/main.2b661356.chunk.css",
-    "main.js": "/my-portfolio/static/js/main.0fd9f36b.chunk.js",
-    "main.js.map": "/my-portfolio/static/js/main.0fd9f36b.chunk.js.map",
+    "main.js": "/my-portfolio/static/js/main.27e0eb6e.chunk.js",
+    "main.js.map": "/my-portfolio/static/js/main.27e0eb6e.chunk.js.map",
     "proGallery_videoItem.js": "/my-portfolio/static/js/proGallery_videoItem.b93db1cc.chunk.js",
     "proGallery_videoItem.js.map": "/my-portfolio/static/js/proGallery_videoItem.b93db1cc.chunk.js.map",
     "proGallery_videoScrollHelper.js": "/my-portfolio/static/js/proGallery_videoScrollHelper.babc707f.chunk.js",
@@ -34,6 +34,7 @@
     "static/media/NeuToy_pivot1.5272499e.png": "/my-portfolio/static/media/NeuToy_pivot1.5272499e.png",
     "static/media/NeuToy_pivot2.9c742317.png": "/my-portfolio/static/media/NeuToy_pivot2.9c742317.png",
     "static/media/Nuffield_mtz_datafile_ex.78273e58.png": "/my-portfolio/static/media/Nuffield_mtz_datafile_ex.78273e58.png",
+    "static/media/SDOF_model_GEVS.44ae4696.png": "/my-portfolio/static/media/SDOF_model_GEVS.44ae4696.png",
     "static/media/SDOF_model_sketch.ca9d133e.jpg": "/my-portfolio/static/media/SDOF_model_sketch.ca9d133e.jpg",
     "static/media/SepVel_testing_setup.e80f019d.jpg": "/my-portfolio/static/media/SepVel_testing_setup.e80f019d.jpg",
     "static/media/apple_architecture.9d61adc2.png": "/my-portfolio/static/media/apple_architecture.9d61adc2.png",
@@ -87,6 +88,6 @@
     "static/css/4.a51bd9bd.chunk.css",
     "static/js/4.3226594b.chunk.js",
     "static/css/main.2b661356.chunk.css",
-    "static/js/main.0fd9f36b.chunk.js"
+    "static/js/main.27e0eb6e.chunk.js"
   ]
 }
