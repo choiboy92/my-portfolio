@@ -334,7 +334,9 @@ function engdes_anime() {
   var vl_progress = progress(300+100)
   var tl_teargear = engdes_teargear_anime()
   var tl_torpedo = engdes_torpedo_anime()
+  var tl_satellite = engdes_satellite_anime()
   window.onscroll = () => {
+    tl_satellite.seek(tl_satellite.duration * getScrollPercent());
     tl_torpedo.seek(tl_torpedo.duration * getScrollPercent());
     tl_teargear.seek(tl_teargear.duration * getScrollPercent());
     vl_progress.seek(vl_progress.duration * getScrollPercent());
@@ -427,6 +429,137 @@ function engdes_torpedo_anime() {
     translateY: [100, 0],
     duration:300,
   }, 0)
+  return tl
+}
+
+function engdes_teargear_anime() {
+  var tl = anime.timeline({
+    duration: 200,
+    elasticity: 200,
+    easing: 'easeInOutSine',
+    autoplay: false
+  });
+
+  tl
+  .add({
+    targets: '#engdes_teargear_manutest',
+    translateY: [100, 0],
+    opacity: [0, 1],
+    duration:200,
+  }, 500)
+  .add({
+    targets: '#engdes_teargear_feat3',
+    translateY: [80, 0],
+    opacity: [0, 1],
+    duration:200,
+  }, 400)
+  .add({
+    targets: '#engdes_teargear_feat2',
+    translateY: [100, 0],
+    opacity: [0, 1],
+    duration:200,
+  }, 400)
+  .add({
+    targets: '#engdes_teargear_feat1',
+    translateY: [150, 0],
+    opacity: [0, 1],
+    duration:200,
+  }, 400)
+  .add({
+    targets: '#engdes_teargear_img',
+    translateY: [100, 0],
+    duration:200,
+  }, 200)
+  .add({
+    targets: '#engdes_teargear_concept',
+    opacity: [0, 1],
+    translateY: [100, 0],
+    duration:200,
+  }, 0)
+  return tl
+}
+
+function engdes_satellite_anime() {
+  var tl = anime.timeline({
+    duration: 200,
+    elasticity: 200,
+    easing: 'easeInOutSine',
+    autoplay: false
+  });
+
+  tl
+  .add({
+    targets: '#engdes_satellite_virtualtxt',
+    translateX: [50, 0],
+    opacity: [0.3, 1],
+    duration:200,
+  }, 1000)
+  .add({
+    targets: '#engdes_satellite_virtualimg',
+    translateX: [-50, 0],
+    opacity: [0, 1],
+    duration:200,
+  }, 950)
+  .add({
+    targets: '#engdes_satellite_virtualintro',
+    translateY: [100, 0],
+    opacity: [0, 1],
+    duration:200,
+  }, 900)
+  .add({
+    targets: '#engdes_satellite_testR1',
+    translateX: [50, 0],
+    duration:200,
+  }, 750)
+  .add({
+    targets: '#engdes_satellite_testL1',
+    translateX: [-50, 0],
+    duration:100,
+  }, 780)
+  .add({
+    targets: '#engdes_satellite_testR',
+    translateX: [50, 0],
+    duration:200,
+  }, 700)
+  .add({
+    targets: '#engdes_satellite_testL',
+    translateX: [-50, 0],
+    duration:100,
+  }, 730)
+  .add({
+    targets: '#engdes_satellite_feat3',
+    opacity: [0, 1],
+    translateY: [100, 0],
+    duration:200,
+  }, 350)
+  .add({
+    targets: '#engdes_satellite_feat2',
+    translateY: [80, 0],
+    opacity: [0, 1],
+    duration:200,
+  }, 325)
+  .add({
+    targets: '#engdes_satellite_feat1',
+    opacity: [0, 1],
+    translateY: [120, 0],
+    duration:200,
+  }, 300)
+  .add({
+    targets: '#engdes_satellite_featimg',
+    translateY: [80, 0],
+    duration:100,
+  }, 220)
+  .add({
+    targets: '#engdes_satellite_concept',
+    translateY: [100, 0],
+    duration:100,
+  }, 100)
+  .add({
+    targets: '#engdes_satellite_research',
+    opacity: [0, 1],
+    translateY: [100, 0],
+    duration:100,
+  }, 20)
   return tl
 }
 

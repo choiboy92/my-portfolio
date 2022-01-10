@@ -68,7 +68,8 @@ function EngDes(props) {
         </div>
         <div className="divider"/>
         <div className="vl"></div>
-        <h1 className="sectionTitle">Research & Review</h1>
+        <div id="engdes_satellite_research">
+          <h1 className="sectionTitle">Research & Review</h1>
           <p>
             When given a design project, experience has helped me learn that although it is easy to
             run into the design process headfirst, this almost always elongates the design period
@@ -84,18 +85,23 @@ function EngDes(props) {
             I delegated research on these three objectives between the team members, exploring existing solutions,
             research and documentation so we could approach the initial design phase as informed as possible.
           </p>
+        </div>
         <div className="divider"/>
-        <h1 className="sectionTitle">Concept Sketches</h1>
+        <div id="engdes_satellite_concept">
+          <h1 className="sectionTitle">Concept Sketches</h1>
           <p>
             Leading on from our research, the team and I looked to develop some concept sketches exploring various actuation methods,
             deployment methods, shapes & forms, damping methods.
           </p>
           <img src={metalpod_concepts} style={{width: "100%", marginBottom:"10px"}} alt="Metalpod Concept sketches"/>
+        </div>
         <div className="divider"/>
-        <h1 className="sectionTitle">Design Features</h1>
+        <div id="engdes_satellite_featimg">
+          <h1 className="sectionTitle">Design Features</h1>
           <img src={metalpodExploded} style={{width: "85%"}} alt="Exploded Metalpod"/>
+        </div>
         <div className="ColWrapper" style={{alignItems: "flex-start"}}>
-          <div className="threeColWrapper_items">
+          <div id="engdes_satellite_feat1" className="threeColWrapper_items">
             <br/><p>PROTECTION BY DAMPING<br/></p>
             <img src={sdof} style={{width: "100%", marginBottom:"10px"}} alt="SDOF model"/>
               <p><br/>Simple SDOF models were used to evaluate the vibration transfer from the rocket, throught the deployment system to the satellite.
@@ -104,14 +110,14 @@ function EngDes(props) {
                 <p>These models were used to verify that the Neoprene sheets would be effective and predict vibration response for a set of GEVS random vibration profiles.
               </p>
           </div>
-          <div className="threeColWrapper_items">
+          <div id="engdes_satellite_feat2" className="threeColWrapper_items">
             <br/><p>SECURE INTERFACE WITH SATELLITE<br/></p>
             <img src={railings} style={{width: "100%", marginBottom:"10px"}} alt="Railings design"/>
               <p><br/>Implementing the protective damping would be of little use if the satellite was not secured and fixed within the deployment system.
                 PTFE coated railings provide the constrainment as well as the smooth interface allowing the satellite to slide out and acting as a barrier to protect against cold-welding.
             </p>
           </div>
-          <div className="threeColWrapper_items">
+          <div id="engdes_satellite_feat3" className="threeColWrapper_items">
             <br/><p>SIMPLE DEPLOYMENT MECHANISM<br/></p>
             <img src={burnwireSketch} style={{width: "100%", marginBottom:"10px"}} alt="Sketch of Burnwire"/>
               <p><br/>
@@ -126,13 +132,13 @@ function EngDes(props) {
         <div className="divider"/>
         <h1 className="sectionTitle">Testing & Analysis</h1>
           <div className="ColWrapper" style={{marginLeft:"10%", marginRight:"10%", justifyContent:"center"}}>
-            <div style={{flex: "1 0 400px"}}>
+            <div id="engdes_satellite_testL" style={{flex: "1 0 400px"}}>
               <img src={burnwire} style={{width: "60%", marginBottom:"10px"}} alt="Burnwire in test configuration"/>
                 <p>BURNWIRE TEST</p>
                 <p><br/>The burnwire mechanism was also tested to evaluate the real required voltages to achieve a cutting time below 10s.
               </p>
             </div>
-            <div style={{flex: "1 0 400px"}}>
+            <div id="engdes_satellite_testR" style={{flex: "1 0 400px"}}>
               <img src={sepvelsetup} style={{width: "60%", marginBottom:"10px"}} alt="SepVel test setup"/>
                 <p>SEPARATION VELOCITY</p>
                 <p><br/>
@@ -143,28 +149,29 @@ function EngDes(props) {
             </div>
           </div>
           <div className="ColWrapper" style={{marginLeft:"10%", marginRight:"10%", justifyContent:"space-evenly"}}>
-            <div style={{flex: "1 0 400px"}}>
+            <div id="engdes_satellite_testL1" style={{flex: "1 0 400px"}}>
               <p>VIBRATION TEST<br/>
                 Both sine sweeps and random vibration tests were carried out on a shaker table to assess the deployment system's ability to protect the satellite under launch conditions and evaluate the accuracy of our SDOF model.
                 <br/><img src={vibration} style={{width: "100%", marginBottom:"10px"}} alt="Vibration profile results"/>
                 <br/>Both sine sweeps and random vibration tests were carried out on a shaker table to assess the deployment system's ability to protect the satellite under launch conditions and evaluate the accuracy of our SDOF model.
               </p>
             </div>
-            <div style={{flex: "1 0 400px"}}>
+            <div id="engdes_satellite_testR1" style={{flex: "1 0 400px"}}>
               <img src={shakertable} style={{width: "100%", marginBottom:"10px"}} alt="Vibration test setup"/>
             </div>
           </div>
           <div className="divider"/>
-          <h1 className="sectionTitle">Challenges of virtual working</h1>
+          <div id="engdes_satellite_virtualintro">
+            <h1 className="sectionTitle">Challenges of virtual working</h1>
             <p>
               The pandemic that plagued most of 2020 and 2021 meant that all project proceedings had to be carried out online.
               This posed some major challenges, some of which were as simple as sharing unrotated images to more complicated ones.
               Here are some of the major challenges that we faced and learned from.
             </p>
+          </div>
             <div className="ColWrapper" style={{alignItems:"center", justifyContent:"center"}}>
-              <img src={dmt_team} style={{width:"400px",flex:"1 0 auto", marginBottom:"10px"}} alt="Online team meetings"/>
-              <p style={{flex:"1 0 300px", marginLeft:"10%", marginRight:"10%"}}>
-
+              <img id="engdes_satellite_virtualimg" src={dmt_team} style={{width:"400px",flex:"1 0 auto", marginBottom:"10px"}} alt="Online team meetings"/>
+              <p id="engdes_satellite_virtualtxt" style={{flex:"1 0 300px", marginLeft:"10%", marginRight:"10%"}}>
                 <br/>
                 MEETINGS & ORGANISATION<br/>
                 Conversations and discussions that could be held in a moment or at the end of a lecture were no longer possible.
