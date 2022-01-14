@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.2b661356.chunk.css",
-    "main.js": "/my-portfolio/static/js/main.2b84849e.chunk.js",
-    "main.js.map": "/my-portfolio/static/js/main.2b84849e.chunk.js.map",
+    "main.css": "/my-portfolio/static/css/main.ae48adff.chunk.css",
+    "main.js": "/my-portfolio/static/js/main.e965f678.chunk.js",
+    "main.js.map": "/my-portfolio/static/js/main.e965f678.chunk.js.map",
     "proGallery_videoItem.js": "/my-portfolio/static/js/proGallery_videoItem.b93db1cc.chunk.js",
     "proGallery_videoItem.js.map": "/my-portfolio/static/js/proGallery_videoItem.b93db1cc.chunk.js.map",
     "proGallery_videoScrollHelper.js": "/my-portfolio/static/js/proGallery_videoScrollHelper.babc707f.chunk.js",
@@ -22,7 +22,7 @@
     "static/js/8.5d3a2933.chunk.js.map": "/my-portfolio/static/js/8.5d3a2933.chunk.js.map",
     "index.html": "/my-portfolio/index.html",
     "static/css/4.a51bd9bd.chunk.css.map": "/my-portfolio/static/css/4.a51bd9bd.chunk.css.map",
-    "static/css/main.2b661356.chunk.css.map": "/my-portfolio/static/css/main.2b661356.chunk.css.map",
+    "static/css/main.ae48adff.chunk.css.map": "/my-portfolio/static/css/main.ae48adff.chunk.css.map",
     "static/js/4.3226594b.chunk.js.LICENSE.txt": "/my-portfolio/static/js/4.3226594b.chunk.js.LICENSE.txt",
     "static/js/6.ecc0f32b.chunk.js.LICENSE.txt": "/my-portfolio/static/js/6.ecc0f32b.chunk.js.LICENSE.txt",
     "static/js/7.9f011415.chunk.js.LICENSE.txt": "/my-portfolio/static/js/7.9f011415.chunk.js.LICENSE.txt",
@@ -36,7 +36,11 @@
     "static/media/Nuffield_mtz_datafile_ex.78273e58.png": "/my-portfolio/static/media/Nuffield_mtz_datafile_ex.78273e58.png",
     "static/media/SDOF_model_GEVS.44ae4696.png": "/my-portfolio/static/media/SDOF_model_GEVS.44ae4696.png",
     "static/media/SDOF_model_sketch.ca9d133e.jpg": "/my-portfolio/static/media/SDOF_model_sketch.ca9d133e.jpg",
+    "static/media/SatelliteDeployment.24ab4cd1.glb": "/my-portfolio/static/media/SatelliteDeployment.24ab4cd1.glb",
+    "static/media/SatelliteDeployment.6e68a1c9.usdz": "/my-portfolio/static/media/SatelliteDeployment.6e68a1c9.usdz",
     "static/media/SepVel_testing_setup.e80f019d.jpg": "/my-portfolio/static/media/SepVel_testing_setup.e80f019d.jpg",
+    "static/media/Teargear.9f232420.glb": "/my-portfolio/static/media/Teargear.9f232420.glb",
+    "static/media/Teargear.c16abfc1.usdz": "/my-portfolio/static/media/Teargear.c16abfc1.usdz",
     "static/media/apple_architecture.9d61adc2.png": "/my-portfolio/static/media/apple_architecture.9d61adc2.png",
     "static/media/attachment_test.dfe4e52d.gif": "/my-portfolio/static/media/attachment_test.dfe4e52d.gif",
     "static/media/aws_presence.0bd27a7a.gif": "/my-portfolio/static/media/aws_presence.0bd27a7a.gif",
@@ -64,6 +68,7 @@
     "static/media/photography_bwport.25fe7b20.JPG": "/my-portfolio/static/media/photography_bwport.25fe7b20.JPG",
     "static/media/photography_self.7a6d16f3.jpg": "/my-portfolio/static/media/photography_self.7a6d16f3.jpg",
     "static/media/photography_window.0220315b.jpg": "/my-portfolio/static/media/photography_window.0220315b.jpg",
+    "static/media/placeholder.36875c97.png": "/my-portfolio/static/media/placeholder.36875c97.png",
     "static/media/profile.9310e563.JPG": "/my-portfolio/static/media/profile.9310e563.JPG",
     "static/media/railings.ed487d00.jpg": "/my-portfolio/static/media/railings.ed487d00.jpg",
     "static/media/reliefmethod.9e14bfc8.png": "/my-portfolio/static/media/reliefmethod.9e14bfc8.png",
@@ -79,6 +84,8 @@
     "static/media/teargear_translucent.29386e22.png": "/my-portfolio/static/media/teargear_translucent.29386e22.png",
     "static/media/teargear_weightdist.745264d8.png": "/my-portfolio/static/media/teargear_weightdist.745264d8.png",
     "static/media/tissue_demo.e72430e6.mov": "/my-portfolio/static/media/tissue_demo.e72430e6.mov",
+    "static/media/torpedo.51967fa2.glb": "/my-portfolio/static/media/torpedo.51967fa2.glb",
+    "static/media/torpedo.d993f435.usdz": "/my-portfolio/static/media/torpedo.d993f435.usdz",
     "static/media/torpedo_poster.eda63bda.png": "/my-portfolio/static/media/torpedo_poster.eda63bda.png",
     "static/media/transferBearing.e2e25444.jpeg": "/my-portfolio/static/media/transferBearing.e2e25444.jpeg",
     "static/media/user_research.2ca8f22e.png": "/my-portfolio/static/media/user_research.2ca8f22e.png"
@@ -87,7 +94,7 @@
     "static/js/runtime-main.25ae74c1.js",
     "static/css/4.a51bd9bd.chunk.css",
     "static/js/4.3226594b.chunk.js",
-    "static/css/main.2b661356.chunk.css",
-    "static/js/main.2b84849e.chunk.js"
+    "static/css/main.ae48adff.chunk.css",
+    "static/js/main.e965f678.chunk.js"
   ]
 }
