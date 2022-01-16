@@ -27,6 +27,15 @@ import weightdist from '../Assets/engdes/teargear_weightdist.png';
 import teargearmade from '../Assets/engdes/teargear_made.png';
 import teargeartest from '../Assets/engdes/teargear_test.png';
 
+import placeholder from '../Assets/ar/placeholder.png';
+import satellite_ar from '../Assets/ar/SatelliteDeployment.glb';
+import satellite_ar_usdz from '../Assets/ar/SatelliteDeployment.usdz';
+import teargear_ar from '../Assets/ar/Teargear.glb';
+import teargear_ar_usdz from '../Assets/ar/Teargear.usdz';
+import torpedo_ar from '../Assets/ar/torpedo.glb';
+import torpedo_ar_usdz from '../Assets/ar/torpedo.usdz';
+
+
 const descriptionMetalpod = "Design, make and test a CubeSat deployment system. The system should interface with the Falcon 9 rocket, protect the satellite during launch, then be able to quickly and effectively deploy a 3U CubeSat (manufactured by other teams).";
 const descriptionTorpedo = "As a team, design an electric powered underwater scooter, capable of depths of 40m and an underwater velocity of 1.5m/s all within a working week.";
 const descriptionTeargear = "Design and manufacture a mini electric drag race car to be raced with other teams. The motor, battery and wheels cannot be altered.";
@@ -98,7 +107,15 @@ function EngDes(props) {
         <div className="divider"/>
         <div id="engdes_satellite_featimg">
           <h1 className="sectionTitle">Design Features</h1>
-          <img src={metalpodExploded} style={{width: "85%"}} alt="Exploded Metalpod"/>
+          <img src={metalpodExploded} style={{width: "80%"}} alt="Exploded Metalpod"/>
+          <model-viewer src={satellite_ar}
+                        ios-src={satellite_ar_usdz}
+                        ar ar-modes="webxr scene-viewer quick-look"
+                        poster={placeholder}
+                        seamless-poster
+                        reveal="interaction"
+                        camera-controls
+                        />
         </div>
         <div className="ColWrapper" style={{alignItems: "flex-start"}}>
           <div id="engdes_satellite_feat1" className="threeColWrapper_items">
@@ -210,6 +227,14 @@ function EngDes(props) {
         <div id="engdes_torpedo_featimg">
         <h1 className="sectionTitle">Design features</h1>
           <img src={torpedo} style={{width: "100%", marginBottom:"0"}} alt="Torpedo Render"/>
+          <model-viewer src={torpedo_ar}
+                        ios-src={torpedo_ar_usdz}
+                        ar ar-modes="webxr scene-viewer quick-look"
+                        poster={placeholder}
+                        seamless-poster
+                        reveal="interaction"
+                        camera-controls
+                        />
           </div>
           <div className="ColWrapper" style={{marginTop:"0"}}>
             <div className="threeColWrapper_items" id="engdes_torpedo_feat1">
@@ -228,6 +253,7 @@ function EngDes(props) {
               </p>
             </div>
           </div>
+
           <div className="divider"/>
         <div id="engdes_torpedo_poster">
         <h1 className="sectionTitle">Technical Poster</h1>
@@ -259,6 +285,14 @@ function EngDes(props) {
           <div className="divider"/>
         <h1 className="sectionTitle">Design Features</h1>
           <img src={teargearRender} style={{width: "60%", marginBottom:"10px"}} alt="Teargear render" id="engdes_teargear_img"/>
+          <model-viewer src={teargear_ar}
+                        ios-src={teargear_ar_usdz}
+                        ar ar-modes="webxr scene-viewer quick-look"
+                        poster={placeholder}
+                        seamless-poster
+                        reveal="interaction"
+                        camera-controls
+                        />
           <div className="ColWrapper" style={{alignItems:"flex-start"}}>
             <div className="threeColWrapper_items" id="engdes_teargear_feat1">
               <br/><p>OUT-OF-THE-BOX THINKING<br/>
